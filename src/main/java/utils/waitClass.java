@@ -1,0 +1,33 @@
+package utils;
+
+import java.time.Duration;
+import java.util.List;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+public class waitClass {
+	
+	protected WebDriver driver;
+	protected WebDriverWait wait;
+	
+	public waitClass(WebDriver driver) {
+		this.driver = driver;
+		this.wait = new WebDriverWait(driver,Duration.ofSeconds(10));
+	}
+	
+	public WebElement visibilityOfElementWait(By webElemnt) {
+		return wait.until(ExpectedConditions.visibilityOfElementLocated(webElemnt));
+	}
+	public WebElement clickForElementWait(By webElemnt) {
+		return wait.until(ExpectedConditions.elementToBeClickable(webElemnt));
+	}
+	public List<WebElement> clickWaitForMultipleElements(By webElemnt) {
+		return  wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(webElemnt));
+	}
+	
+
+}
