@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 3 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Suite" class="navigator-link">
-              <span class="suite-name border-passed">Suite</span>
+              <span class="suite-name border-failed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -92,7 +92,31 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">9 methods,   9 passed</span>
+                    <span class="method-stats">20 methods, 3 failed,   17 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="Test.TC003" class="method navigator-link" hash-for-method="increaseQuantity">increaseQuantity</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="Test.TC003" class="method navigator-link" hash-for-method="productNameSearch">productNameSearch</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="Test.TC003" class="method navigator-link" hash-for-method="productNameSearch">productNameSearch</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -108,7 +132,22 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="Test.TC003" class="method navigator-link" hash-for-method="addProductToCart">addProductToCart</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="Test.TC003" class="method navigator-link" hash-for-method="addTwoDifferentProduct">addTwoDifferentProduct</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="Test.TC003" class="method navigator-link" hash-for-method="addTwoDifferentProduct">addTwoDifferentProduct</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="Test.TC004" class="method navigator-link" hash-for-method="checkoutFlow">checkoutFlow</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -128,7 +167,32 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="Test.MainTest" class="method navigator-link" hash-for-method="loginTest">loginTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="Test.TC004" class="method navigator-link" hash-for-method="multiProductCartLogic">multiProductCartLogic</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="Test.TC004" class="method navigator-link" hash-for-method="multiProductCartLogic">multiProductCartLogic</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="Test.TC002" class="method navigator-link" hash-for-method="productTest(Jeans, Soft Stretch Jeans, Rs. 799)">productTest(Jeans, Soft Stretch Jeans, Rs. 799)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="Test.TC002" class="method navigator-link" hash-for-method="productTest(T-shirt, Pure Cotton V-Neck T-Shirt, Rs. 1299)">productTest(T-shirt, Pure Cotton V-Neck T-Shirt, Rs. 1299)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="Test.TC002" class="method navigator-link" hash-for-method="productTest(Dress, Sleeveless Dress, Rs. 1000)">productTest(Dress, Sleeveless Dress, Rs. 1000)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -158,12 +222,93 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">Test.TC003</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="increaseQuantity">
+                  </a> <!-- increaseQuantity -->
+                  <span class="method-name">increaseQuantity</span>
+                  <div class="stack-trace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;a href=&quot;/product_details/28&quot; style=&quot;color: brown;&quot;&gt;...&lt;/a&gt; is not clickable at point (622, 19). Other element would receive the click: &lt;iframe id=&quot;aswift_1&quot; name=&quot;aswift_1&quot; style=&quot;min-height: auto !important; max-height: none !important; min-width: auto !important; max-width: none !important; width: 100vw !important; height: 100vh !important; inset: 0px auto auto 0px !important; position: absolute !important; clear: none !important; display: inline !important; float: none !important; margin: 0px !important; opacity: 1 !important; overflow: visible !important; padding: 0px !important; vertical-align: baseline !important; visibility: visible !important; z-index: auto !important;&quot; sandbox=&quot;allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation&quot; width=&quot;&quot; height=&quot;&quot; frameborder=&quot;0&quot; marginwidth=&quot;0&quot; marginheight=&quot;0&quot; vspace=&quot;0&quot; hspace=&quot;0&quot; allowtransparency=&quot;true&quot; scrolling=&quot;no&quot; allow=&quot;attribution-reporting; run-ad-auction&quot; src=&quot;https://googleads.g.doubleclick.net/pagead/html/r20260422/r20190131/zrt_lookup_fy2021.html#RS-0-&amp;amp;adk=1812271808&amp;amp;client=ca-pub-1677597403311019&amp;amp;fa=8&amp;amp;ifi=2&amp;amp;uci=a!2&quot; data-google-container-id=&quot;a!2&quot; tabindex=&quot;0&quot; title=&quot;Advertisement&quot; aria-label=&quot;Advertisement&quot; data-google-query-id=&quot;CPO3jY_sg5QDFYFWnQkdXnYpAA&quot; data-load-complete=&quot;true&quot;&gt;&lt;/iframe&gt;
+  (Session info: MicrosoftEdge=147.0.3912.72)
+Build info: version: &apos;4.39.0&apos;, revision: &apos;126f156aee&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.4&apos;
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [216f45a9c3e571a9d0c662da404b6db5, clickElement {id=f.1961C2930E3A88C066FDE5DDDA2C7D03.d.B1BEFC112360F500FFDD0DE9F9487037.e.175}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 147.0.3912.72, fedcm:accounts: true, goog:processID: 5328, ms:edgeOptions: {debuggerAddress: localhost:63445}, msedge: {msedgedriverVersion: 147.0.3912.72 (d4380ba2b9dc..., userDataDir: C:\Users\pukki\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63445/devtoo..., se:cdpVersion: 147.0.3912.72, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[[[EdgeDriver: MicrosoftEdge on windows (216f45a9c3e571a9d0c662da404b6db5)] -&gt; xpath: //div[@class=&apos;product-image-wrapper&apos;]]] -&gt; xpath: .//div[@class=&apos;choose&apos;]/ul/li/a]
+Session ID: 216f45a9c3e571a9d0c662da404b6db5
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:142)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:561)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at pages.ProductPage.getToIncreaseQuantity(ProductPage.java:138)
+	at Test.TC003.increaseQuantity(TC003.java:37)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 18 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="productNameSearch">
+                  </a> <!-- productNameSearch -->
+                  <span class="method-name">productNameSearch</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [9] but found [7]
+	at Test.TC003.productNameSearch(TC003.java:60)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 22 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="productNameSearch">
+                  </a> <!-- productNameSearch -->
+                  <span class="method-name">productNameSearch</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [9] but found [7]
+	at Test.TC003.productNameSearch(TC003.java:60)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 22 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
               <span class="class-name">Test.MainTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginTest">
+                  </a> <!-- loginTest -->
+                  <span class="method-name">loginTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
                   <a name="loginTest">
@@ -184,6 +329,20 @@
                   <a name="addProductToCart">
                   </a> <!-- addProductToCart -->
                   <span class="method-name">addProductToCart</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="addProductToCart">
+                  </a> <!-- addProductToCart -->
+                  <span class="method-name">addProductToCart</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="addTwoDifferentProduct">
+                  </a> <!-- addTwoDifferentProduct -->
+                  <span class="method-name">addTwoDifferentProduct</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -217,6 +376,20 @@
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
+                  <a name="checkoutFlow">
+                  </a> <!-- checkoutFlow -->
+                  <span class="method-name">checkoutFlow</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="multiProductCartLogic">
+                  </a> <!-- multiProductCartLogic -->
+                  <span class="method-name">multiProductCartLogic</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
                   <a name="multiProductCartLogic">
                   </a> <!-- multiProductCartLogic -->
                   <span class="method-name">multiProductCartLogic</span>
@@ -230,6 +403,30 @@
               <span class="class-name">Test.TC002</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="productTest(Jeans, Soft Stretch Jeans, Rs. 799)">
+                  </a> <!-- productTest(Jeans, Soft Stretch Jeans, Rs. 799) -->
+                  <span class="method-name">productTest</span>
+                  <span class="parameters">(Jeans,Soft Stretch Jeans,Rs. 799)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="productTest(T-shirt, Pure Cotton V-Neck T-Shirt, Rs. 1299)">
+                  </a> <!-- productTest(T-shirt, Pure Cotton V-Neck T-Shirt, Rs. 1299) -->
+                  <span class="method-name">productTest</span>
+                  <span class="parameters">(T-shirt,Pure Cotton V-Neck T-Shirt,Rs. 1299)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="productTest(Dress, Sleeveless Dress, Rs. 1000)">
+                  </a> <!-- productTest(Dress, Sleeveless Dress, Rs. 1000) -->
+                  <span class="method-name">productTest</span>
+                  <span class="parameters">(Dress,Sleeveless Dress,Rs. 1000)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
                   <a name="productTest(Dress, Sleeveless Dress, Rs. 1000)">
@@ -327,48 +524,92 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(9);
+data.addRows(20);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'checkoutFlow')
 data.setCell(0, 2, 'Test.TC004')
-data.setCell(0, 3, 58676);
+data.setCell(0, 3, 25900);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'productTest')
-data.setCell(1, 2, 'Test.TC002')
-data.setCell(1, 3, 55502);
+data.setCell(1, 1, 'checkoutFlow')
+data.setCell(1, 2, 'Test.TC004')
+data.setCell(1, 3, 20263);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'loginTest')
 data.setCell(2, 2, 'Test.MainTest')
-data.setCell(2, 3, 44831);
+data.setCell(2, 3, 13245);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'productTest')
-data.setCell(3, 2, 'Test.TC002')
-data.setCell(3, 3, 31173);
+data.setCell(3, 1, 'multiProductCartLogic')
+data.setCell(3, 2, 'Test.TC004')
+data.setCell(3, 3, 12954);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'increaseQuantity')
-data.setCell(4, 2, 'Test.TC003')
-data.setCell(4, 3, 20448);
+data.setCell(4, 1, 'multiProductCartLogic')
+data.setCell(4, 2, 'Test.TC004')
+data.setCell(4, 3, 11401);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'multiProductCartLogic')
-data.setCell(5, 2, 'Test.TC004')
-data.setCell(5, 3, 16492);
+data.setCell(5, 1, 'increaseQuantity')
+data.setCell(5, 2, 'Test.TC003')
+data.setCell(5, 3, 10479);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'productTest')
-data.setCell(6, 2, 'Test.TC002')
-data.setCell(6, 3, 12385);
+data.setCell(6, 1, 'loginTest')
+data.setCell(6, 2, 'Test.MainTest')
+data.setCell(6, 3, 9598);
 data.setCell(7, 0, 7)
-data.setCell(7, 1, 'addTwoDifferentProduct')
+data.setCell(7, 1, 'increaseQuantity')
 data.setCell(7, 2, 'Test.TC003')
-data.setCell(7, 3, 9572);
+data.setCell(7, 3, 9475);
 data.setCell(8, 0, 8)
-data.setCell(8, 1, 'addProductToCart')
-data.setCell(8, 2, 'Test.TC003')
-data.setCell(8, 3, 9468);
+data.setCell(8, 1, 'productTest')
+data.setCell(8, 2, 'Test.TC002')
+data.setCell(8, 3, 8848);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'addTwoDifferentProduct')
+data.setCell(9, 2, 'Test.TC003')
+data.setCell(9, 3, 8708);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'productTest')
+data.setCell(10, 2, 'Test.TC002')
+data.setCell(10, 3, 8667);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'addTwoDifferentProduct')
+data.setCell(11, 2, 'Test.TC003')
+data.setCell(11, 3, 8564);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'productTest')
+data.setCell(12, 2, 'Test.TC002')
+data.setCell(12, 3, 7962);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'productTest')
+data.setCell(13, 2, 'Test.TC002')
+data.setCell(13, 3, 7943);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'addProductToCart')
+data.setCell(14, 2, 'Test.TC003')
+data.setCell(14, 3, 7521);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'productTest')
+data.setCell(15, 2, 'Test.TC002')
+data.setCell(15, 3, 7012);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'productTest')
+data.setCell(16, 2, 'Test.TC002')
+data.setCell(16, 3, 6919);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'addProductToCart')
+data.setCell(17, 2, 'Test.TC003')
+data.setCell(17, 3, 6000);
+data.setCell(18, 0, 18)
+data.setCell(18, 1, 'productNameSearch')
+data.setCell(18, 2, 'Test.TC003')
+data.setCell(18, 3, 5568);
+data.setCell(19, 0, 19)
+data.setCell(19, 1, 'productNameSearch')
+data.setCell(19, 2, 'Test.TC003')
+data.setCell(19, 3, 5161);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 5 minutes</span>
+              <span class="suite-total-time">Total running time: 2 minutes</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -401,247 +642,273 @@ return data;
               </div> <!-- configuration-method before -->
               <div class="configuration-method before">
                 <span class="method-name">setUp(chrome)</span>
-                <span class="method-start">2 ms</span>
+                <span class="method-start">1 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">loginTest</span>
-                <span class="method-start">24543 ms</span>
+                <span class="method-start">11434 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">loginTest</span>
-                <span class="method-start">34585 ms</span>
+                <span class="method-start">17640 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">69902 ms</span>
+                <span class="method-start">21596 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">Test.TC002</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setUp(edge)</span>
-                <span class="method-start">70257 ms</span>
+                <span class="method-start">22069 ms</span>
               </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">productTest(T-shirt, Pure Cotton V-Neck T-Shirt, Rs. 1299)</span>
+                <span class="method-start">27948 ms</span>
+              </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">Test.MainTest</div> <!-- chronological-class-name -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">72249 ms</span>
+                <span class="method-start">32098 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">Test.TC002</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setUp(chrome)</span>
-                <span class="method-start">72867 ms</span>
+                <span class="method-start">33597 ms</span>
               </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">productTest(T-shirt, Pure Cotton V-Neck T-Shirt, Rs. 1299)</span>
-                <span class="method-start">76264 ms</span>
-              </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">88780 ms</span>
+                <span class="method-start">36968 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp(edge)</span>
-                <span class="method-start">89148 ms</span>
+                <span class="method-start">37363 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">productTest(Jeans, Soft Stretch Jeans, Rs. 799)</span>
-                <span class="method-start">91962 ms</span>
+                <span class="method-name">productTest(T-shirt, Pure Cotton V-Neck T-Shirt, Rs. 1299)</span>
+                <span class="method-start">38409 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">productTest(T-shirt, Pure Cotton V-Neck T-Shirt, Rs. 1299)</span>
-                <span class="method-start">105588 ms</span>
+                <span class="method-name">productTest(Jeans, Soft Stretch Jeans, Rs. 799)</span>
+                <span class="method-start">42600 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">132329 ms</span>
+                <span class="method-start">47285 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp(chrome)</span>
-                <span class="method-start">132690 ms</span>
+                <span class="method-start">47609 ms</span>
               </div> <!-- configuration-method before -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">147615 ms</span>
+                <span class="method-start">50737 ms</span>
               </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">productTest(Jeans, Soft Stretch Jeans, Rs. 799)</span>
+                <span class="method-start">51628 ms</span>
+              </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">setUp(edge)</span>
-                <span class="method-start">147871 ms</span>
+                <span class="method-start">51669 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">productTest(Dress, Sleeveless Dress, Rs. 1000)</span>
-                <span class="method-start">153589 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">productTest(Jeans, Soft Stretch Jeans, Rs. 799)</span>
-                <span class="method-start">158600 ms</span>
+                <span class="method-start">57592 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">184957 ms</span>
+                <span class="method-start">58708 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(chrome)</span>
+                <span class="method-start">59057 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">productTest(Dress, Sleeveless Dress, Rs. 1000)</span>
+                <span class="method-start">63102 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">64744 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">Test.TC003</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setUp(edge)</span>
-                <span class="method-start">185450 ms</span>
+                <span class="method-start">65078 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">addProductToCart</span>
-                <span class="method-start">191201 ms</span>
+                <span class="method-start">69445 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">Test.TC002</div> <!-- chronological-class-name -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">196683 ms</span>
+                <span class="method-start">71153 ms</span>
               </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">setUp(chrome)</span>
-                <span class="method-start">197075 ms</span>
-              </div> <!-- configuration-method before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">Test.TC003</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(chrome)</span>
+                <span class="method-start">71541 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">addProductToCart</span>
+                <span class="method-start">77097 ms</span>
+              </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">200919 ms</span>
+                <span class="method-start">77152 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp(edge)</span>
-                <span class="method-start">203281 ms</span>
+                <span class="method-start">77406 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">addTwoDifferentProduct</span>
-                <span class="method-start">212652 ms</span>
+                <span class="method-start">81384 ms</span>
               </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">Test.TC002</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <span class="method-name">productTest(Dress, Sleeveless Dress, Rs. 1000)</span>
-                <span class="method-start">212673 ms</span>
-              </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">Test.TC003</div> <!-- chronological-class-name -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">222456 ms</span>
+                <span class="method-start">83311 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(chrome)</span>
+                <span class="method-start">83739 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">addTwoDifferentProduct</span>
+                <span class="method-start">87627 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">90153 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp(edge)</span>
-                <span class="method-start">222731 ms</span>
+                <span class="method-start">90521 ms</span>
               </div> <!-- configuration-method before -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">Test.TC002</div> <!-- chronological-class-name -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">227404 ms</span>
+                <span class="method-start">96814 ms</span>
               </div> <!-- configuration-method after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">Test.TC003</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setUp(chrome)</span>
-                <span class="method-start">229755 ms</span>
+                <span class="method-start">97197 ms</span>
               </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">increaseQuantity</span>
+                <span class="method-start">98102 ms</span>
+              </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">increaseQuantity</span>
-                <span class="method-start">235609 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">addProductToCart</span>
-                <span class="method-start">239279 ms</span>
+                <span class="method-start">103487 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">249479 ms</span>
+                <span class="method-start">107812 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(edge)</span>
+                <span class="method-start">108274 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">productNameSearch</span>
+                <span class="method-start">113715 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">114136 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp(chrome)</span>
-                <span class="method-start">249792 ms</span>
+                <span class="method-start">114997 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">addTwoDifferentProduct</span>
-                <span class="method-start">254602 ms</span>
+                <img src="failed.png">
+                </img>
+                <span class="method-name">productNameSearch</span>
+                <span class="method-start">118600 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">256244 ms</span>
+                <span class="method-start">119495 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">Test.TC004</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setUp(edge)</span>
-                <span class="method-start">256595 ms</span>
+                <span class="method-start">120071 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">Test.TC003</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">123962 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">Test.TC004</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(chrome)</span>
+                <span class="method-start">124240 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">checkoutFlow</span>
-                <span class="method-start">273098 ms</span>
+                <span class="method-start">125293 ms</span>
               </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">Test.TC003</div> <!-- chronological-class-name -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">275461 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">setUp(chrome)</span>
-                <span class="method-start">276119 ms</span>
-              </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">increaseQuantity</span>
-                <span class="method-start">281921 ms</span>
+                <span class="method-name">checkoutFlow</span>
+                <span class="method-start">126534 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">310272 ms</span>
-              </div> <!-- configuration-method after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">Test.TC004</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
-                <span class="method-name">setUp(chrome)</span>
-                <span class="method-start">310622 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">331913 ms</span>
+                <span class="method-start">145700 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp(edge)</span>
-                <span class="method-start">332463 ms</span>
+                <span class="method-start">146213 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">multiProductCartLogic</span>
-                <span class="method-start">339454 ms</span>
+                <span class="method-start">150321 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">356267 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="test-method">
-                <span class="method-name">checkoutFlow</span>
-                <span class="method-start">360729 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">420583 ms</span>
+                <span class="method-start">152542 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp(chrome)</span>
-                <span class="method-start">421116 ms</span>
+                <span class="method-start">152894 ms</span>
               </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">multiProductCartLogic</span>
+                <span class="method-start">157955 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">161882 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">171050 ms</span>
+              </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->

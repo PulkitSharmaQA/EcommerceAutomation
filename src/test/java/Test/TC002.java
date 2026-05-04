@@ -35,6 +35,7 @@ public class TC002 extends BaseTest {
 		Assert.assertTrue(product.getFirstProductDetails().containsAll(priceAndNameList));
 		
 	}
+	
 	 @DataProvider(name = "Items")
 	    public Object[][] getData() {
 
@@ -44,6 +45,5 @@ public class TC002 extends BaseTest {
 	                {"Dress","Sleeveless Dress","Rs. 1000"}
 	        };
 	    }
-	
 
 }

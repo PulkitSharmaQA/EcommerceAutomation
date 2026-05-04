@@ -53,5 +53,11 @@ public class TC003 extends BaseTest{
 		Assert.assertEquals(cartproduct.getTotal(), 2299);
 
 	}
+	@Test
+	void productNameSearch() {
+		ProductPage product = new ProductPage(driver);
+		product.searchProducts("Dress");
+		Assert.assertEquals(product.countProductWithName("Dress"),product.productCountValidation());
+	}
 
 }

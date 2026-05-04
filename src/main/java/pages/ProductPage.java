@@ -21,6 +21,7 @@ public class ProductPage {
 	By searchProduct = By.xpath("//input[@id='search_product']");
 	By searchBtn = By.xpath("//button[@id='submit_search']");
 	By allProducts = By.xpath("//div[@class='product-image-wrapper']");
+	By productWithNames = By.xpath("//div[starts-with(@class,'productinfo ')]/p");
 	By cotainTshirtsText = By.xpath(".//div[@class='productinfo text-center']/p");
 	By productPrice = By.xpath(".//div[@class='productinfo text-center']/h2");
 	By viewProduct = By.xpath(".//div[@class='choose']/ul/li/a");
@@ -36,7 +37,7 @@ public class ProductPage {
 
 	}
 	
-	public void searchProducts(String productName) {
+	public  void searchProducts(String productName) {
 		
 		WebElement productBtn=wait.clickForElementWait(productLink);
 		SmartActions.scrollToElement(productBtn);
@@ -45,15 +46,27 @@ public class ProductPage {
 		wait.visibilityOfElementWait(searchProduct).sendKeys(productName);
 		wait.clickForElementWait(searchBtn).click();
 		
+		
 	}
+	//Product with names
+		public int countProductWithName(String productname) {
+			int count=0;
+			List<WebElement> productNames = wait.clickWaitForMultipleElements(productWithNames);
+			for(int i =0;i<productNames.size();i++) {
+				if(productNames.get(i).getText().contains(productname)) {
+					
+					count+=1;
+				}
+			}
+			return count;
+		}
 	public int productCountValidation() {
 		int count = 0;
-		List<WebElement> productInfo = wait.clickWaitForMultipleElements(allProducts);
+		List<WebElement> productInfo = wait.clickWaitForMultipleElements(productWithNames);
 		
 		for(int i=0;i<productInfo.size();i++) {
 			count+=1;
 		}
-		System.out.println(count);
 		return count;
 		
 	}

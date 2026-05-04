@@ -7,13 +7,14 @@
   <test thread-count="5" parallel="tests" name="EdgeTest(failed)">
     <parameter name="browser" value="edge"/>
     <classes>
-      <class name="Test.TC004">
+      <class name="Test.TC003">
         <methods>
-          <include name="checkoutFlow"/>
+          <include name="increaseQuantity"/>
+          <include name="productNameSearch"/>
           <include name="tearDown"/>
           <include name="setUp"/>
         </methods>
-      </class> <!-- Test.TC004 -->
+      </class> <!-- Test.TC003 -->
     </classes>
   </test> <!-- EdgeTest(failed) -->
   <test thread-count="5" parallel="tests" name="ChromeTest(failed)">
@@ -21,27 +22,11 @@
     <classes>
       <class name="Test.TC003">
         <methods>
-          <include name="addProductToCart"/>
-          <include name="addTwoDifferentProduct"/>
+          <include name="productNameSearch"/>
           <include name="tearDown"/>
           <include name="setUp"/>
         </methods>
       </class> <!-- Test.TC003 -->
-      <class name="Test.TC004">
-        <methods>
-          <include name="multiProductCartLogic"/>
-          <include name="checkoutFlow"/>
-          <include name="tearDown"/>
-          <include name="setUp"/>
-        </methods>
-      </class> <!-- Test.TC004 -->
-      <class name="Test.TC002">
-        <methods>
-          <include name="productTest" invocation-numbers="0 1"/>
-          <include name="tearDown"/>
-          <include name="setUp"/>
-        </methods>
-      </class> <!-- Test.TC002 -->
     </classes>
   </test> <!-- ChromeTest(failed) -->
 </suite> <!-- Failed suite [Suite] -->

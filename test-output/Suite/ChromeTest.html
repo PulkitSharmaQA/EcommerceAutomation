@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>ChromeTest</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>8/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>9/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Mon Mar 09 17:57:34 IST 2026</td>
+<td>Started on:</td><td>Thu Apr 23 16:43:09 IST 2026</td>
 </tr>
-<tr><td>Total time:</td><td>530 seconds (530423 ms)</td>
+<tr><td>Total time:</td><td>171 seconds (171587 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,6 +67,57 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='Test.TC003.productNameSearch()'><b>productNameSearch</b><br>Test class: Test.TC003</td>
+<td><div><pre>java.lang.AssertionError: expected [9] but found [7]
+	at Test.TC003.productNameSearch(TC003.java:60)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 22 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace515829774", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace515829774'><pre>java.lang.AssertionError: expected [9] but found [7]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1590)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:1431)
+	at org.testng.Assert.assertEquals(Assert.java:1395)
+	at org.testng.Assert.assertEquals(Assert.java:1441)
+	at Test.TC003.productNameSearch(TC003.java:60)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+</pre></div></td>
+<td>5</td>
+<td>Test.TC003@2a8448fa</td></tr>
+</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -76,45 +127,50 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
+<td title='Test.TC002.productTest()'><b>productTest</b><br>Test class: Test.TC002<br>Parameters: Dress, Sleeveless Dress, Rs. 1000</td>
+<td></td>
+<td>7</td>
+<td>Test.TC002@239a307b</td></tr>
+<tr>
+<td title='Test.TC004.multiProductCartLogic()'><b>multiProductCartLogic</b><br>Test class: Test.TC004</td>
+<td></td>
+<td>12</td>
+<td>Test.TC004@6f204a1a</td></tr>
+<tr>
+<td title='Test.TC004.checkoutFlow()'><b>checkoutFlow</b><br>Test class: Test.TC004</td>
+<td></td>
+<td>25</td>
+<td>Test.TC004@6f204a1a</td></tr>
+<tr>
 <td title='Test.MainTest.loginTest()'><b>loginTest</b><br>Test class: Test.MainTest</td>
 <td></td>
-<td>37</td>
+<td>13</td>
 <td>Test.MainTest@7d9d0818</td></tr>
 <tr>
 <td title='Test.TC002.productTest()'><b>productTest</b><br>Test class: Test.TC002<br>Parameters: T-shirt, Pure Cotton V-Neck T-Shirt, Rs. 1299</td>
 <td></td>
-<td>25</td>
+<td>8</td>
 <td>Test.TC002@239a307b</td></tr>
-<tr>
-<td title='Test.TC004.checkoutFlow()'><b>checkoutFlow</b><br>Test class: Test.TC004</td>
-<td></td>
-<td>59</td>
-<td>Test.TC004@6f204a1a</td></tr>
 <tr>
 <td title='Test.TC003.increaseQuantity()'><b>increaseQuantity</b><br>Test class: Test.TC003</td>
 <td></td>
-<td>28</td>
-<td>Test.TC003@2a8448fa</td></tr>
-<tr>
-<td title='Test.TC002.productTest()'><b>productTest</b><br>Test class: Test.TC002<br>Parameters: Jeans, Soft Stretch Jeans, Rs. 799</td>
-<td></td>
-<td>37</td>
-<td>Test.TC002@239a307b</td></tr>
-<tr>
-<td title='Test.TC003.addProductToCart()'><b>addProductToCart</b><br>Test class: Test.TC003</td>
-<td></td>
-<td>9</td>
+<td>10</td>
 <td>Test.TC003@2a8448fa</td></tr>
 <tr>
 <td title='Test.TC003.addTwoDifferentProduct()'><b>addTwoDifferentProduct</b><br>Test class: Test.TC003</td>
 <td></td>
-<td>20</td>
+<td>8</td>
 <td>Test.TC003@2a8448fa</td></tr>
 <tr>
-<td title='Test.TC002.productTest()'><b>productTest</b><br>Test class: Test.TC002<br>Parameters: Dress, Sleeveless Dress, Rs. 1000</td>
+<td title='Test.TC002.productTest()'><b>productTest</b><br>Test class: Test.TC002<br>Parameters: Jeans, Soft Stretch Jeans, Rs. 799</td>
 <td></td>
-<td>14</td>
+<td>6</td>
 <td>Test.TC002@239a307b</td></tr>
+<tr>
+<td title='Test.TC003.addProductToCart()'><b>addProductToCart</b><br>Test class: Test.TC003</td>
+<td></td>
+<td>6</td>
+<td>Test.TC003@2a8448fa</td></tr>
 </table><p>
 </body>
 </html>

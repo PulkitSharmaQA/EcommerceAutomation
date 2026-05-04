@@ -121,5 +121,13 @@ public class loginValidation {
 		return randomString;
 	}
 	
+	public void reverseString() {
+		String name = "Josh";
+		
+		for(int i=3;i<name.length() -1 ;i--) {
+			System.out.println(name.charAt(i));
+		}
+	}
+	
 
 }
