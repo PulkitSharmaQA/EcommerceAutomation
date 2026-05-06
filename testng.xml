@@ -9,7 +9,7 @@
   <parameter name="browser" value="chrome"></parameter>
     <classes>
       <class name="Test.MainTest"/>
-      <!-- class name="Test.TC002"/-->
+      <class name="Test.TC002"/>
       <!--class name="Test.TC003"/-->
       <!--class name="Test.TC004"/-->
       
@@ -19,7 +19,7 @@
   <parameter name="browser" value="edge"></parameter>
     <classes>
       <class name="Test.MainTest"/>
-      <!--class name="Test.TC002"/-->
+      <class name="Test.TC002"/>
       <!--class name="Test.TC003"/-->
       <!--class name="Test.TC004"/-->
       
