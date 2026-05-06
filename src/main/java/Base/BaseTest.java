@@ -2,16 +2,18 @@ package Base;
 
 import java.io.IOException;
 
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Optional;
 import org.testng.annotations.Parameters;
 
 import config.configReader;
 import io.github.bonigarcia.wdm.WebDriverManager;
-import pages.HomePage;
+
 
 public class BaseTest {
 
@@ -22,7 +24,7 @@ public class BaseTest {
 	
 	@BeforeMethod
 	@Parameters({ "browser" })
-	public void setUp(String br) throws IOException {
+	public void setUp(@Optional("chrome")String br) throws IOException {
 		configData = new configReader();
 		configData.readFile();
 		String url = configData.getUrl();
