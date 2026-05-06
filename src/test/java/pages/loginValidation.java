@@ -68,6 +68,8 @@ public class loginValidation {
 		for(WebElement item :items) {
 			if(item.getText().contains(value)) {
 				item.click();
+				SmartActions.scrollToElement(item);
+				SmartActions.jsClick(item);
 				break;
 			}
 		}
