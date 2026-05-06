@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 3 failed tests</span>
+      <span class="top-banner-font-1">1 suite, 5 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -92,7 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">20 methods, 3 failed,   17 passed</span>
+                    <span class="method-stats">23 methods, 5 failed,  3 skipped,  15 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -103,7 +103,17 @@
                     <div class="method-list-content failed suite-Suite">
                       <span>
                         <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="Test.TC003" class="method navigator-link" hash-for-method="increaseQuantity">increaseQuantity</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="Test.TC004" class="method navigator-link" hash-for-method="checkoutFlow">checkoutFlow</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="Test.TC004" class="method navigator-link" hash-for-method="checkoutFlow">checkoutFlow</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="Test.MainTest" class="method navigator-link" hash-for-method="loginTest">loginTest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -117,6 +127,30 @@
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title skipped">Retried methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods skipped suite-Suite"> (hide)</a> <!-- hide-methods skipped suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods skipped suite-Suite"> (show)</a> <!-- show-methods skipped suite-Suite -->
+                    </span>
+                    <div class="method-list-content skipped suite-Suite">
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="Test.TC002" class="method navigator-link" hash-for-method="productTest(Jeans, Soft Stretch Jeans, Rs. 799)">productTest(Jeans, Soft Stretch Jeans, Rs. 799)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="Test.TC002" class="method navigator-link" hash-for-method="productTest(Dress, Sleeveless Dress, Rs. 1000)">productTest(Dress, Sleeveless Dress, Rs. 1000)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="Test.TC002" class="method navigator-link" hash-for-method="productTest(Jeans, Soft Stretch Jeans, Rs. 799)">productTest(Jeans, Soft Stretch Jeans, Rs. 799)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content skipped suite-Suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -147,12 +181,7 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="Test.TC004" class="method navigator-link" hash-for-method="checkoutFlow">checkoutFlow</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="Test.TC004" class="method navigator-link" hash-for-method="checkoutFlow">checkoutFlow</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="Test.TC003" class="method navigator-link" hash-for-method="increaseQuantity">increaseQuantity</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -167,22 +196,12 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="Test.MainTest" class="method navigator-link" hash-for-method="loginTest">loginTest</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="Test.TC004" class="method navigator-link" hash-for-method="multiProductCartLogic">multiProductCartLogic</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="Test.TC004" class="method navigator-link" hash-for-method="multiProductCartLogic">multiProductCartLogic</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="Test.TC002" class="method navigator-link" hash-for-method="productTest(Jeans, Soft Stretch Jeans, Rs. 799)">productTest(Jeans, Soft Stretch Jeans, Rs. 799)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -197,17 +216,22 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="Test.TC002" class="method navigator-link" hash-for-method="productTest(Jeans, Soft Stretch Jeans, Rs. 799)">productTest(Jeans, Soft Stretch Jeans, Rs. 799)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="Test.TC002" class="method navigator-link" hash-for-method="productTest(Dress, Sleeveless Dress, Rs. 1000)">productTest(Dress, Sleeveless Dress, Rs. 1000)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="Test.TC002" class="method navigator-link" hash-for-method="productTest(T-shirt, Pure Cotton V-Neck T-Shirt, Rs. 1299)">productTest(T-shirt, Pure Cotton V-Neck T-Shirt, Rs. 1299)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="Test.TC002" class="method navigator-link" hash-for-method="productTest(Jeans, Soft Stretch Jeans, Rs. 799)">productTest(Jeans, Soft Stretch Jeans, Rs. 799)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="Test.TC002" class="method navigator-link" hash-for-method="productTest(Jeans, Soft Stretch Jeans, Rs. 799)">productTest(Jeans, Soft Stretch Jeans, Rs. 799)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="Test.TC002" class="method navigator-link" hash-for-method="productTest(T-shirt, Pure Cotton V-Neck T-Shirt, Rs. 1299)">productTest(T-shirt, Pure Cotton V-Neck T-Shirt, Rs. 1299)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -225,23 +249,23 @@
           <div class="suite-Suite-class-failed">
             <div class="main-panel-header rounded-window-top">
               <img src="failed.png"/>
-              <span class="class-name">Test.TC003</span>
+              <span class="class-name">Test.MainTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="increaseQuantity">
-                  </a> <!-- increaseQuantity -->
-                  <span class="method-name">increaseQuantity</span>
-                  <div class="stack-trace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;a href=&quot;/product_details/28&quot; style=&quot;color: brown;&quot;&gt;...&lt;/a&gt; is not clickable at point (622, 19). Other element would receive the click: &lt;iframe id=&quot;aswift_1&quot; name=&quot;aswift_1&quot; style=&quot;min-height: auto !important; max-height: none !important; min-width: auto !important; max-width: none !important; width: 100vw !important; height: 100vh !important; inset: 0px auto auto 0px !important; position: absolute !important; clear: none !important; display: inline !important; float: none !important; margin: 0px !important; opacity: 1 !important; overflow: visible !important; padding: 0px !important; vertical-align: baseline !important; visibility: visible !important; z-index: auto !important;&quot; sandbox=&quot;allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation&quot; width=&quot;&quot; height=&quot;&quot; frameborder=&quot;0&quot; marginwidth=&quot;0&quot; marginheight=&quot;0&quot; vspace=&quot;0&quot; hspace=&quot;0&quot; allowtransparency=&quot;true&quot; scrolling=&quot;no&quot; allow=&quot;attribution-reporting; run-ad-auction&quot; src=&quot;https://googleads.g.doubleclick.net/pagead/html/r20260422/r20190131/zrt_lookup_fy2021.html#RS-0-&amp;amp;adk=1812271808&amp;amp;client=ca-pub-1677597403311019&amp;amp;fa=8&amp;amp;ifi=2&amp;amp;uci=a!2&quot; data-google-container-id=&quot;a!2&quot; tabindex=&quot;0&quot; title=&quot;Advertisement&quot; aria-label=&quot;Advertisement&quot; data-google-query-id=&quot;CPO3jY_sg5QDFYFWnQkdXnYpAA&quot; data-load-complete=&quot;true&quot;&gt;&lt;/iframe&gt;
-  (Session info: MicrosoftEdge=147.0.3912.72)
+                  <a name="loginTest">
+                  </a> <!-- loginTest -->
+                  <span class="method-name">loginTest</span>
+                  <div class="stack-trace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;select data-qa=&quot;months&quot; id=&quot;months&quot; name=&quot;months&quot; class=&quot;form-control&quot;&gt;...&lt;/select&gt; is not clickable at point (461, 636). Other element would receive the click: &lt;iframe id=&quot;aswift_1&quot; name=&quot;aswift_1&quot; style=&quot;min-height: auto; max-height: none; min-width: auto; max-width: none; width: 728px !important; height: 90px !important; display: block; margin: 0px auto;&quot; sandbox=&quot;allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation&quot; width=&quot;728&quot; height=&quot;90&quot; frameborder=&quot;0&quot; marginwidth=&quot;0&quot; marginheight=&quot;0&quot; vspace=&quot;0&quot; hspace=&quot;0&quot; allowtransparency=&quot;true&quot; scrolling=&quot;no&quot; allow=&quot;attribution-reporting; run-ad-auction&quot; src=&quot;https://googleads.g.doubleclick.net/pagead/html/r20260504/r20190131/zrt_lookup_fy2021.html#RS-1-&amp;amp;adk=1812271801&amp;amp;client=ca-pub-1677597403311019&amp;amp;fa=1&amp;amp;ifi=2&amp;amp;uci=a!2&amp;amp;btvi=1&quot; data-google-container-id=&quot;a!2&quot; tabindex=&quot;0&quot; title=&quot;Advertisement&quot; aria-label=&quot;Advertisement&quot; data-google-query-id=&quot;CPbD6sOmpJQDFc6YuQUdwjsbnQ&quot;&gt;&lt;/iframe&gt;
+  (Session info: chrome=147.0.7727.138)
 Build info: version: &apos;4.39.0&apos;, revision: &apos;126f156aee&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.4&apos;
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [216f45a9c3e571a9d0c662da404b6db5, clickElement {id=f.1961C2930E3A88C066FDE5DDDA2C7D03.d.B1BEFC112360F500FFDD0DE9F9487037.e.175}]
-Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 147.0.3912.72, fedcm:accounts: true, goog:processID: 5328, ms:edgeOptions: {debuggerAddress: localhost:63445}, msedge: {msedgedriverVersion: 147.0.3912.72 (d4380ba2b9dc..., userDataDir: C:\Users\pukki\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63445/devtoo..., se:cdpVersion: 147.0.3912.72, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[[[EdgeDriver: MicrosoftEdge on windows (216f45a9c3e571a9d0c662da404b6db5)] -&gt; xpath: //div[@class=&apos;product-image-wrapper&apos;]]] -&gt; xpath: .//div[@class=&apos;choose&apos;]/ul/li/a]
-Session ID: 216f45a9c3e571a9d0c662da404b6db5
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [e5a2b8ab8093367b1a9d3571b25543ce, clickElement {id=f.0A3FCBA80DD28D5F8D1BEEB324DBA25E.d.A84B80828825491C82677C4E083EBCA8.e.88}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 147.0.7727.138, chrome: {chromedriverVersion: 147.0.7727.117 (474cc805edd..., userDataDir: C:\Users\pukki\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52251}, goog:processID: 23852, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52251/devtoo..., se:cdpVersion: 147.0.7727.138, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (e5a2b8ab8093367b1a9d3571b25543ce)] -&gt; xpath: //select[@id=&apos;months&apos;]]
+Session ID: e5a2b8ab8093367b1a9d3571b25543ce
 	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:142)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
@@ -251,8 +275,9 @@ Session ID: 216f45a9c3e571a9d0c662da404b6db5
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:561)
 	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
 	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
-	at pages.ProductPage.getToIncreaseQuantity(ProductPage.java:138)
-	at Test.TC003.increaseQuantity(TC003.java:37)
+	at pages.loginValidation.getValueInDropDown(loginValidation.java:70)
+	at pages.loginValidation.userDetails(loginValidation.java:82)
+	at Test.MainTest.loginTest(MainTest.java:22)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
 	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
@@ -262,6 +287,14 @@ Session ID: 216f45a9c3e571a9d0c662da404b6db5
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">Test.TC003</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
                   <a name="productNameSearch">
@@ -296,19 +329,193 @@ Session ID: 216f45a9c3e571a9d0c662da404b6db5
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">Test.TC004</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkoutFlow">
+                  </a> <!-- checkoutFlow -->
+                  <span class="method-name">checkoutFlow</span>
+                  <div class="stack-trace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;select data-qa=&quot;days&quot; id=&quot;days&quot; name=&quot;days&quot; class=&quot;form-control&quot;&gt;...&lt;/select&gt; is not clickable at point (324, 636). Other element would receive the click: &lt;iframe id=&quot;aswift_2&quot; name=&quot;aswift_2&quot; style=&quot;min-height: auto; max-height: none; min-width: auto; max-width: none; width: 1005px !important; height: 124px !important; display: block; margin: 0px auto;&quot; sandbox=&quot;allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation&quot; width=&quot;1005&quot; height=&quot;124&quot; frameborder=&quot;0&quot; marginwidth=&quot;0&quot; marginheight=&quot;0&quot; vspace=&quot;0&quot; hspace=&quot;0&quot; allowtransparency=&quot;true&quot; scrolling=&quot;no&quot; allow=&quot;attribution-reporting; run-ad-auction&quot; src=&quot;https://googleads.g.doubleclick.net/pagead/html/r20260504/r20190131/zrt_lookup_fy2021.html#RS-1-&amp;amp;adk=1812271801&amp;amp;client=ca-pub-1677597403311019&amp;amp;fa=1&amp;amp;ifi=3&amp;amp;uci=a!3&amp;amp;btvi=2&quot; data-google-container-id=&quot;a!3&quot; tabindex=&quot;0&quot; title=&quot;Advertisement&quot; aria-label=&quot;Advertisement&quot; data-google-query-id=&quot;CMTWyfSnpJQDFRONrAIdW8oU3g&quot; data-load-complete=&quot;true&quot;&gt;&lt;/iframe&gt;
+  (Session info: MicrosoftEdge=147.0.3912.98)
+Build info: version: &apos;4.39.0&apos;, revision: &apos;126f156aee&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.4&apos;
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [7819e412320bbcf51afed3fa79e1c5ad, clickElement {id=f.9238A43948A43815E378316105B6B593.d.007DB438B205FE07303FCB5D7F51A1EB.e.76}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 147.0.3912.98, fedcm:accounts: true, goog:processID: 2740, ms:edgeOptions: {debuggerAddress: localhost:49864}, msedge: {msedgedriverVersion: 147.0.3912.98 (6cae4df1a4ff..., userDataDir: C:\Users\pukki\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49864/devtoo..., se:cdpVersion: 147.0.3912.98, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[EdgeDriver: MicrosoftEdge on windows (7819e412320bbcf51afed3fa79e1c5ad)] -&gt; xpath: //select[@id=&apos;days&apos;]]
+Session ID: 7819e412320bbcf51afed3fa79e1c5ad
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:142)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:561)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at pages.loginValidation.getValueInDropDown(loginValidation.java:70)
+	at pages.loginValidation.userDetails(loginValidation.java:81)
+	at Test.TC004.checkoutFlow(TC004.java:45)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 18 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkoutFlow">
+                  </a> <!-- checkoutFlow -->
+                  <span class="method-name">checkoutFlow</span>
+                  <div class="stack-trace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;select data-qa=&quot;months&quot; id=&quot;months&quot; name=&quot;months&quot; class=&quot;form-control&quot;&gt;...&lt;/select&gt; is not clickable at point (461, 636). Other element would receive the click: &lt;iframe id=&quot;aswift_1&quot; name=&quot;aswift_1&quot; style=&quot;min-height: auto; max-height: none; min-width: auto; max-width: none; width: 728px !important; height: 90px !important; display: block; margin: 0px auto;&quot; sandbox=&quot;allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation&quot; width=&quot;728&quot; height=&quot;90&quot; frameborder=&quot;0&quot; marginwidth=&quot;0&quot; marginheight=&quot;0&quot; vspace=&quot;0&quot; hspace=&quot;0&quot; allowtransparency=&quot;true&quot; scrolling=&quot;no&quot; allow=&quot;attribution-reporting; run-ad-auction&quot; src=&quot;https://googleads.g.doubleclick.net/pagead/html/r20260504/r20190131/zrt_lookup_fy2021.html#RS-1-&amp;amp;adk=1812271801&amp;amp;client=ca-pub-1677597403311019&amp;amp;fa=1&amp;amp;ifi=2&amp;amp;uci=a!2&amp;amp;btvi=1&quot; data-google-container-id=&quot;a!2&quot; tabindex=&quot;0&quot; title=&quot;Advertisement&quot; aria-label=&quot;Advertisement&quot; data-google-query-id=&quot;CLHD9oeopJQDFcOz6QUdKmgEbA&quot; data-load-complete=&quot;true&quot;&gt;&lt;/iframe&gt;
+  (Session info: chrome=147.0.7727.138)
+Build info: version: &apos;4.39.0&apos;, revision: &apos;126f156aee&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.4&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [e84b23408b1aa6b9abc57f5888fc2a82, clickElement {id=f.01BA85598FEED9C66BC5DCE632B655A8.d.955A95CE32C28BF87CDCE3EAC0B7DBFD.e.86}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 147.0.7727.138, chrome: {chromedriverVersion: 147.0.7727.117 (474cc805edd..., userDataDir: C:\Users\pukki\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62905}, goog:processID: 11720, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62905/devtoo..., se:cdpVersion: 147.0.7727.138, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (e84b23408b1aa6b9abc57f5888fc2a82)] -&gt; xpath: //select[@id=&apos;months&apos;]]
+Session ID: e84b23408b1aa6b9abc57f5888fc2a82
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:142)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:561)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at pages.loginValidation.getValueInDropDown(loginValidation.java:70)
+	at pages.loginValidation.userDetails(loginValidation.java:82)
+	at Test.TC004.checkoutFlow(TC004.java:45)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 18 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">Test.TC002</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="productTest(Jeans, Soft Stretch Jeans, Rs. 799)">
+                  </a> <!-- productTest(Jeans, Soft Stretch Jeans, Rs. 799) -->
+                  <span class="method-name">productTest</span>
+                  <span class="parameters">(Jeans,Soft Stretch Jeans,Rs. 799)</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.xpath: //a[@href=&apos;/products&apos;] (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.39.0&apos;, revision: &apos;126f156aee&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.4&apos;
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 147.0.3912.98, fedcm:accounts: true, goog:processID: 10524, ms:edgeOptions: {debuggerAddress: localhost:55694}, msedge: {msedgedriverVersion: 147.0.3912.98 (6cae4df1a4ff..., userDataDir: C:\Users\pukki\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55694/devtoo..., se:cdpVersion: 147.0.3912.98, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: d5d19c4866836b09ccf43d2608fe7a99
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at utils.waitClass.clickForElementWait(waitClass.java:26)
+	at pages.ProductPage.searchProducts(ProductPage.java:42)
+	at Test.TC002.productTest(TC002.java:20)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 15 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="productTest(Dress, Sleeveless Dress, Rs. 1000)">
+                  </a> <!-- productTest(Dress, Sleeveless Dress, Rs. 1000) -->
+                  <span class="method-name">productTest</span>
+                  <span class="parameters">(Dress,Sleeveless Dress,Rs. 1000)</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchSessionException: invalid session id: session deleted as the browser has closed the connection
+from disconnected: not connected to DevTools
+  (Session info: chrome=147.0.7727.138)
+Build info: version: &apos;4.39.0&apos;, revision: &apos;126f156aee&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.4&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [08d07e38a8c2ba176f2f9b9ebfea2cb2, findElement {using=xpath, value=//a[@href=&apos;/products&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 147.0.7727.138, chrome: {chromedriverVersion: 147.0.7727.117 (474cc805edd..., userDataDir: C:\Users\pukki\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54419}, goog:processID: 18908, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54419/devtoo..., se:cdpVersion: 147.0.7727.138, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 08d07e38a8c2ba176f2f9b9ebfea2cb2
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:142)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:561)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:166)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:384)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:378)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:198)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:194)
+	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:632)
+	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:629)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
+	at utils.waitClass.clickForElementWait(waitClass.java:26)
+	at pages.ProductPage.searchProducts(ProductPage.java:42)
+	at Test.TC002.productTest(TC002.java:20)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 18 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="productTest(Jeans, Soft Stretch Jeans, Rs. 799)">
+                  </a> <!-- productTest(Jeans, Soft Stretch Jeans, Rs. 799) -->
+                  <span class="method-name">productTest</span>
+                  <span class="parameters">(Jeans,Soft Stretch Jeans,Rs. 799)</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.xpath: //a[@href=&apos;/products&apos;] (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.39.0&apos;, revision: &apos;126f156aee&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.4&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 147.0.7727.138, chrome: {chromedriverVersion: 147.0.7727.117 (474cc805edd..., userDataDir: C:\Users\pukki\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63397}, goog:processID: 17032, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63397/devtoo..., se:cdpVersion: 147.0.7727.138, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: bc3eb2ea6a41a78c3f09e69154663aff
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at utils.waitClass.clickForElementWait(waitClass.java:26)
+	at pages.ProductPage.searchProducts(ProductPage.java:42)
+	at Test.TC002.productTest(TC002.java:20)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 15 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-skipped -->
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
               <span class="class-name">Test.MainTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="loginTest">
-                  </a> <!-- loginTest -->
-                  <span class="method-name">loginTest</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
                   <a name="loginTest">
@@ -359,6 +566,13 @@ Session ID: 216f45a9c3e571a9d0c662da404b6db5
                   <span class="method-name">increaseQuantity</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="increaseQuantity">
+                  </a> <!-- increaseQuantity -->
+                  <span class="method-name">increaseQuantity</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Suite-class-passed -->
           <div class="suite-Suite-class-passed">
@@ -367,20 +581,6 @@ Session ID: 216f45a9c3e571a9d0c662da404b6db5
               <span class="class-name">Test.TC004</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="checkoutFlow">
-                  </a> <!-- checkoutFlow -->
-                  <span class="method-name">checkoutFlow</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="checkoutFlow">
-                  </a> <!-- checkoutFlow -->
-                  <span class="method-name">checkoutFlow</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
                   <a name="multiProductCartLogic">
@@ -405,14 +605,6 @@ Session ID: 216f45a9c3e571a9d0c662da404b6db5
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="productTest(Jeans, Soft Stretch Jeans, Rs. 799)">
-                  </a> <!-- productTest(Jeans, Soft Stretch Jeans, Rs. 799) -->
-                  <span class="method-name">productTest</span>
-                  <span class="parameters">(Jeans,Soft Stretch Jeans,Rs. 799)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
                   <a name="productTest(T-shirt, Pure Cotton V-Neck T-Shirt, Rs. 1299)">
                   </a> <!-- productTest(T-shirt, Pure Cotton V-Neck T-Shirt, Rs. 1299) -->
                   <span class="method-name">productTest</span>
@@ -429,6 +621,14 @@ Session ID: 216f45a9c3e571a9d0c662da404b6db5
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
+                  <a name="productTest(Jeans, Soft Stretch Jeans, Rs. 799)">
+                  </a> <!-- productTest(Jeans, Soft Stretch Jeans, Rs. 799) -->
+                  <span class="method-name">productTest</span>
+                  <span class="parameters">(Jeans,Soft Stretch Jeans,Rs. 799)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
                   <a name="productTest(Dress, Sleeveless Dress, Rs. 1000)">
                   </a> <!-- productTest(Dress, Sleeveless Dress, Rs. 1000) -->
                   <span class="method-name">productTest</span>
@@ -437,18 +637,18 @@ Session ID: 216f45a9c3e571a9d0c662da404b6db5
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="productTest(T-shirt, Pure Cotton V-Neck T-Shirt, Rs. 1299)">
-                  </a> <!-- productTest(T-shirt, Pure Cotton V-Neck T-Shirt, Rs. 1299) -->
-                  <span class="method-name">productTest</span>
-                  <span class="parameters">(T-shirt,Pure Cotton V-Neck T-Shirt,Rs. 1299)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
                   <a name="productTest(Jeans, Soft Stretch Jeans, Rs. 799)">
                   </a> <!-- productTest(Jeans, Soft Stretch Jeans, Rs. 799) -->
                   <span class="method-name">productTest</span>
                   <span class="parameters">(Jeans,Soft Stretch Jeans,Rs. 799)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="productTest(T-shirt, Pure Cotton V-Neck T-Shirt, Rs. 1299)">
+                  </a> <!-- productTest(T-shirt, Pure Cotton V-Neck T-Shirt, Rs. 1299) -->
+                  <span class="method-name">productTest</span>
+                  <span class="parameters">(T-shirt,Pure Cotton V-Neck T-Shirt,Rs. 1299)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -524,92 +724,104 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(20);
+data.addRows(23);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'checkoutFlow')
+data.setCell(0, 1, 'multiProductCartLogic')
 data.setCell(0, 2, 'Test.TC004')
-data.setCell(0, 3, 25900);
+data.setCell(0, 3, 72296);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'checkoutFlow')
-data.setCell(1, 2, 'Test.TC004')
-data.setCell(1, 3, 20263);
+data.setCell(1, 1, 'productTest')
+data.setCell(1, 2, 'Test.TC002')
+data.setCell(1, 3, 58353);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'loginTest')
-data.setCell(2, 2, 'Test.MainTest')
-data.setCell(2, 3, 13245);
+data.setCell(2, 1, 'increaseQuantity')
+data.setCell(2, 2, 'Test.TC003')
+data.setCell(2, 3, 52183);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'multiProductCartLogic')
-data.setCell(3, 2, 'Test.TC004')
-data.setCell(3, 3, 12954);
+data.setCell(3, 1, 'productTest')
+data.setCell(3, 2, 'Test.TC002')
+data.setCell(3, 3, 50845);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'multiProductCartLogic')
-data.setCell(4, 2, 'Test.TC004')
-data.setCell(4, 3, 11401);
+data.setCell(4, 1, 'productTest')
+data.setCell(4, 2, 'Test.TC002')
+data.setCell(4, 3, 42634);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'increaseQuantity')
+data.setCell(5, 1, 'productNameSearch')
 data.setCell(5, 2, 'Test.TC003')
-data.setCell(5, 3, 10479);
+data.setCell(5, 3, 32763);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'loginTest')
-data.setCell(6, 2, 'Test.MainTest')
-data.setCell(6, 3, 9598);
+data.setCell(6, 1, 'productTest')
+data.setCell(6, 2, 'Test.TC002')
+data.setCell(6, 3, 30066);
 data.setCell(7, 0, 7)
 data.setCell(7, 1, 'increaseQuantity')
 data.setCell(7, 2, 'Test.TC003')
-data.setCell(7, 3, 9475);
+data.setCell(7, 3, 29924);
 data.setCell(8, 0, 8)
 data.setCell(8, 1, 'productTest')
 data.setCell(8, 2, 'Test.TC002')
-data.setCell(8, 3, 8848);
+data.setCell(8, 3, 29744);
 data.setCell(9, 0, 9)
-data.setCell(9, 1, 'addTwoDifferentProduct')
-data.setCell(9, 2, 'Test.TC003')
-data.setCell(9, 3, 8708);
+data.setCell(9, 1, 'multiProductCartLogic')
+data.setCell(9, 2, 'Test.TC004')
+data.setCell(9, 3, 29725);
 data.setCell(10, 0, 10)
-data.setCell(10, 1, 'productTest')
-data.setCell(10, 2, 'Test.TC002')
-data.setCell(10, 3, 8667);
+data.setCell(10, 1, 'loginTest')
+data.setCell(10, 2, 'Test.MainTest')
+data.setCell(10, 3, 28280);
 data.setCell(11, 0, 11)
 data.setCell(11, 1, 'addTwoDifferentProduct')
 data.setCell(11, 2, 'Test.TC003')
-data.setCell(11, 3, 8564);
+data.setCell(11, 3, 23958);
 data.setCell(12, 0, 12)
-data.setCell(12, 1, 'productTest')
-data.setCell(12, 2, 'Test.TC002')
-data.setCell(12, 3, 7962);
+data.setCell(12, 1, 'addTwoDifferentProduct')
+data.setCell(12, 2, 'Test.TC003')
+data.setCell(12, 3, 23323);
 data.setCell(13, 0, 13)
 data.setCell(13, 1, 'productTest')
 data.setCell(13, 2, 'Test.TC002')
-data.setCell(13, 3, 7943);
+data.setCell(13, 3, 22710);
 data.setCell(14, 0, 14)
-data.setCell(14, 1, 'addProductToCart')
-data.setCell(14, 2, 'Test.TC003')
-data.setCell(14, 3, 7521);
+data.setCell(14, 1, 'checkoutFlow')
+data.setCell(14, 2, 'Test.TC004')
+data.setCell(14, 3, 20224);
 data.setCell(15, 0, 15)
-data.setCell(15, 1, 'productTest')
-data.setCell(15, 2, 'Test.TC002')
-data.setCell(15, 3, 7012);
+data.setCell(15, 1, 'productNameSearch')
+data.setCell(15, 2, 'Test.TC003')
+data.setCell(15, 3, 19485);
 data.setCell(16, 0, 16)
-data.setCell(16, 1, 'productTest')
-data.setCell(16, 2, 'Test.TC002')
-data.setCell(16, 3, 6919);
+data.setCell(16, 1, 'addProductToCart')
+data.setCell(16, 2, 'Test.TC003')
+data.setCell(16, 3, 15563);
 data.setCell(17, 0, 17)
 data.setCell(17, 1, 'addProductToCart')
 data.setCell(17, 2, 'Test.TC003')
-data.setCell(17, 3, 6000);
+data.setCell(17, 3, 14726);
 data.setCell(18, 0, 18)
-data.setCell(18, 1, 'productNameSearch')
-data.setCell(18, 2, 'Test.TC003')
-data.setCell(18, 3, 5568);
+data.setCell(18, 1, 'checkoutFlow')
+data.setCell(18, 2, 'Test.TC004')
+data.setCell(18, 3, 12338);
 data.setCell(19, 0, 19)
-data.setCell(19, 1, 'productNameSearch')
-data.setCell(19, 2, 'Test.TC003')
-data.setCell(19, 3, 5161);
+data.setCell(19, 1, 'loginTest')
+data.setCell(19, 2, 'Test.MainTest')
+data.setCell(19, 3, 12307);
+data.setCell(20, 0, 20)
+data.setCell(20, 1, 'productTest')
+data.setCell(20, 2, 'Test.TC002')
+data.setCell(20, 3, 10514);
+data.setCell(21, 0, 21)
+data.setCell(21, 1, 'productTest')
+data.setCell(21, 2, 'Test.TC002')
+data.setCell(21, 3, 10079);
+data.setCell(22, 0, 22)
+data.setCell(22, 1, 'productTest')
+data.setCell(22, 2, 'Test.TC002')
+data.setCell(22, 3, 6087);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 2 minutes</span>
+              <span class="suite-total-time">Total running time: 9 minutes</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -637,277 +849,323 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">Test.MainTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
-                <span class="method-name">setUp(edge)</span>
+                <span class="method-name">setUp(chrome)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
               <div class="configuration-method before">
-                <span class="method-name">setUp(chrome)</span>
-                <span class="method-start">1 ms</span>
+                <span class="method-name">setUp(edge)</span>
+                <span class="method-start">2 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">loginTest</span>
-                <span class="method-start">11434 ms</span>
+                <span class="method-start">34935 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">loginTest</span>
-                <span class="method-start">17640 ms</span>
+                <span class="method-start">39548 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">21596 ms</span>
+                <span class="method-start">52084 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">Test.TC002</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
-                <span class="method-name">setUp(edge)</span>
-                <span class="method-start">22069 ms</span>
+                <span class="method-name">setUp(chrome)</span>
+                <span class="method-start">52450 ms</span>
               </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">productTest(T-shirt, Pure Cotton V-Neck T-Shirt, Rs. 1299)</span>
-                <span class="method-start">27948 ms</span>
-              </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">Test.MainTest</div> <!-- chronological-class-name -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">32098 ms</span>
+                <span class="method-start">63598 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">Test.TC002</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
-                <span class="method-name">setUp(chrome)</span>
-                <span class="method-start">33597 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">36968 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
                 <span class="method-name">setUp(edge)</span>
-                <span class="method-start">37363 ms</span>
+                <span class="method-start">63950 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">productTest(T-shirt, Pure Cotton V-Neck T-Shirt, Rs. 1299)</span>
-                <span class="method-start">38409 ms</span>
+                <span class="method-start">71572 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">productTest(Jeans, Soft Stretch Jeans, Rs. 799)</span>
-                <span class="method-start">42600 ms</span>
+                <span class="method-name">productTest(T-shirt, Pure Cotton V-Neck T-Shirt, Rs. 1299)</span>
+                <span class="method-start">77583 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">47285 ms</span>
+                <span class="method-start">101458 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp(chrome)</span>
-                <span class="method-start">47609 ms</span>
+                <span class="method-start">101749 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">productTest(Jeans, Soft Stretch Jeans, Rs. 799)</span>
+                <span class="method-start">105435 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">115516 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(chrome)</span>
+                <span class="method-start">115862 ms</span>
               </div> <!-- configuration-method before -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">50737 ms</span>
+                <span class="method-start">128624 ms</span>
               </div> <!-- configuration-method after -->
-              <div class="test-method">
-                <span class="method-name">productTest(Jeans, Soft Stretch Jeans, Rs. 799)</span>
-                <span class="method-start">51628 ms</span>
-              </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">setUp(edge)</span>
-                <span class="method-start">51669 ms</span>
+                <span class="method-start">129006 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">productTest(Dress, Sleeveless Dress, Rs. 1000)</span>
-                <span class="method-start">57592 ms</span>
+                <span class="method-name">productTest(Jeans, Soft Stretch Jeans, Rs. 799)</span>
+                <span class="method-start">130436 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">productTest(Jeans, Soft Stretch Jeans, Rs. 799)</span>
+                <span class="method-start">131908 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">58708 ms</span>
+                <span class="method-start">142425 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(edge)</span>
+                <span class="method-start">142742 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">productTest(Jeans, Soft Stretch Jeans, Rs. 799)</span>
+                <span class="method-start">155603 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">185753 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(edge)</span>
+                <span class="method-start">186135 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">188947 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp(chrome)</span>
-                <span class="method-start">59057 ms</span>
+                <span class="method-start">189306 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">productTest(Dress, Sleeveless Dress, Rs. 1000)</span>
-                <span class="method-start">63102 ms</span>
+                <span class="method-start">191731 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">64744 ms</span>
+                <span class="method-start">197820 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(chrome)</span>
+                <span class="method-start">197930 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">productTest(Dress, Sleeveless Dress, Rs. 1000)</span>
+                <span class="method-start">209646 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">productTest(Dress, Sleeveless Dress, Rs. 1000)</span>
+                <span class="method-start">216059 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">232502 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">Test.TC003</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setUp(edge)</span>
-                <span class="method-start">65078 ms</span>
+                <span class="method-start">233193 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">addProductToCart</span>
-                <span class="method-start">69445 ms</span>
+                <span class="method-start">252618 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">Test.TC002</div> <!-- chronological-class-name -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">71153 ms</span>
+                <span class="method-start">258830 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">Test.TC003</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setUp(chrome)</span>
-                <span class="method-start">71541 ms</span>
+                <span class="method-start">261102 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">267551 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(edge)</span>
+                <span class="method-start">268137 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">addProductToCart</span>
-                <span class="method-start">77097 ms</span>
+                <span class="method-start">274910 ms</span>
               </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">77152 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">setUp(edge)</span>
-                <span class="method-start">77406 ms</span>
-              </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">addTwoDifferentProduct</span>
-                <span class="method-start">81384 ms</span>
+                <span class="method-start">282748 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">83311 ms</span>
+                <span class="method-start">290681 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp(chrome)</span>
-                <span class="method-start">83739 ms</span>
+                <span class="method-start">291232 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">addTwoDifferentProduct</span>
-                <span class="method-start">87627 ms</span>
+                <span class="method-start">300625 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">90153 ms</span>
+                <span class="method-start">306821 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp(edge)</span>
-                <span class="method-start">90521 ms</span>
+                <span class="method-start">307205 ms</span>
               </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">increaseQuantity</span>
+                <span class="method-start">315776 ms</span>
+              </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">96814 ms</span>
+                <span class="method-start">324118 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp(chrome)</span>
-                <span class="method-start">97197 ms</span>
+                <span class="method-start">325045 ms</span>
               </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">increaseQuantity</span>
-                <span class="method-start">98102 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">increaseQuantity</span>
-                <span class="method-start">103487 ms</span>
-              </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">107812 ms</span>
+                <span class="method-start">345895 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp(edge)</span>
-                <span class="method-start">108274 ms</span>
+                <span class="method-start">346287 ms</span>
               </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">increaseQuantity</span>
+                <span class="method-start">347249 ms</span>
+              </div> <!-- test-method -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">productNameSearch</span>
-                <span class="method-start">113715 ms</span>
+                <span class="method-start">368678 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">114136 ms</span>
+                <span class="method-start">399615 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp(chrome)</span>
-                <span class="method-start">114997 ms</span>
+                <span class="method-start">400093 ms</span>
               </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">productNameSearch</span>
-                <span class="method-start">118600 ms</span>
-              </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">119495 ms</span>
+                <span class="method-start">401639 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">Test.TC004</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setUp(edge)</span>
-                <span class="method-start">120071 ms</span>
+                <span class="method-start">401982 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">checkoutFlow</span>
+                <span class="method-start">415250 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">Test.TC003</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">productNameSearch</span>
+                <span class="method-start">416463 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">Test.TC004</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">427809 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(edge)</span>
+                <span class="method-start">428167 ms</span>
               </div> <!-- configuration-method before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">Test.TC003</div> <!-- chronological-class-name -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">123962 ms</span>
+                <span class="method-start">436155 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">Test.TC004</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setUp(chrome)</span>
-                <span class="method-start">124240 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">checkoutFlow</span>
-                <span class="method-start">125293 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">checkoutFlow</span>
-                <span class="method-start">126534 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">145700 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">setUp(edge)</span>
-                <span class="method-start">146213 ms</span>
+                <span class="method-start">437269 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">multiProductCartLogic</span>
-                <span class="method-start">150321 ms</span>
+                <span class="method-start">443505 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">checkoutFlow</span>
+                <span class="method-start">445074 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">152542 ms</span>
+                <span class="method-start">466881 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp(chrome)</span>
-                <span class="method-start">152894 ms</span>
+                <span class="method-start">467379 ms</span>
               </div> <!-- configuration-method before -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">473349 ms</span>
+              </div> <!-- configuration-method after -->
               <div class="test-method">
                 <span class="method-name">multiProductCartLogic</span>
-                <span class="method-start">157955 ms</span>
+                <span class="method-start">478641 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">161882 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">171050 ms</span>
+                <span class="method-start">551082 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

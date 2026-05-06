@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="20" passed="17" failed="3" skipped="0">
+<testng-results retried="3" ignored="0" total="23" passed="15" failed="5" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-04-23T16:43:09 IST" name="Suite" finished-at="2026-04-23T16:46:00 IST" duration-ms="171587">
+  <suite started-at="2026-05-06T14:30:34 IST" name="Suite" finished-at="2026-05-06T14:39:46 IST" duration-ms="551827">
     <groups>
     </groups>
-    <test started-at="2026-04-23T16:43:09 IST" name="EdgeTest" finished-at="2026-04-23T16:45:51 IST" duration-ms="162488">
+    <test started-at="2026-05-06T14:30:34 IST" name="EdgeTest" finished-at="2026-05-06T14:38:28 IST" duration-ms="474046">
       <class name="Test.TC002">
-        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:Test.TC002@1500b2f3]" started-at="2026-04-23T16:43:31 IST" name="setUp" finished-at="2026-04-23T16:43:37 IST" duration-ms="5878" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:Test.TC002@1500b2f3]" started-at="2026-05-06T14:31:38 IST" name="setUp" finished-at="2026-05-06T14:31:52 IST" duration-ms="13632" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,7 +18,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="productTest(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Test.TC002@1500b2f3]" started-at="2026-04-23T16:43:37 IST" name="productTest" data-provider="Items" finished-at="2026-04-23T16:43:46 IST" duration-ms="8848" status="PASS">
+        <test-method signature="productTest(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Test.TC002@1500b2f3]" started-at="2026-05-06T14:31:52 IST" name="productTest" data-provider="Items" finished-at="2026-05-06T14:32:43 IST" duration-ms="50845" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -39,11 +39,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- productTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:Test.TC002@1500b2f3]" started-at="2026-04-23T16:43:46 IST" name="tearDown" finished-at="2026-04-23T16:43:46 IST" duration-ms="395" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Test.TC002@1500b2f3]" started-at="2026-05-06T14:32:43 IST" name="tearDown" finished-at="2026-05-06T14:32:43 IST" duration-ms="382" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:Test.TC002@1500b2f3]" started-at="2026-04-23T16:43:46 IST" name="setUp" finished-at="2026-04-23T16:43:51 IST" duration-ms="5237" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:Test.TC002@1500b2f3]" started-at="2026-05-06T14:32:43 IST" name="setUp" finished-at="2026-05-06T14:32:46 IST" duration-ms="2902" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -54,7 +54,87 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="productTest(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Test.TC002@1500b2f3]" started-at="2026-04-23T16:43:51 IST" name="productTest" data-provider="Items" finished-at="2026-04-23T16:43:59 IST" duration-ms="7962" status="PASS">
+        <test-method retried="true" signature="productTest(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Test.TC002@1500b2f3]" started-at="2026-05-06T14:32:46 IST" name="productTest" data-provider="Items" finished-at="2026-05-06T14:32:57 IST" duration-ms="10514" status="SKIP">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Jeans]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Soft Stretch Jeans]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Rs. 799]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for element to be clickable: By.xpath: //a[@href='/products'] (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '4.39.0', revision: '126f156aee'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.4'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 147.0.3912.98, fedcm:accounts: true, goog:processID: 10524, ms:edgeOptions: {debuggerAddress: localhost:55694}, msedge: {msedgedriverVersion: 147.0.3912.98 (6cae4df1a4ff..., userDataDir: C:\Users\pukki\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55694/devtoo..., se:cdpVersion: 147.0.3912.98, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: d5d19c4866836b09ccf43d2608fe7a99]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.xpath: //a[@href='/products'] (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '4.39.0', revision: '126f156aee'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.4'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 147.0.3912.98, fedcm:accounts: true, goog:processID: 10524, ms:edgeOptions: {debuggerAddress: localhost:55694}, msedge: {msedgedriverVersion: 147.0.3912.98 (6cae4df1a4ff..., userDataDir: C:\Users\pukki\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55694/devtoo..., se:cdpVersion: 147.0.3912.98, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: d5d19c4866836b09ccf43d2608fe7a99
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+at utils.waitClass.clickForElementWait(waitClass.java:26)
+at pages.ProductPage.searchProducts(ProductPage.java:42)
+at Test.TC002.productTest(TC002.java:20)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1583)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- productTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Test.TC002@1500b2f3]" started-at="2026-05-06T14:32:57 IST" name="tearDown" finished-at="2026-05-06T14:32:57 IST" duration-ms="317" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:Test.TC002@1500b2f3]" started-at="2026-05-06T14:32:57 IST" name="setUp" finished-at="2026-05-06T14:33:10 IST" duration-ms="12861" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="productTest(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Test.TC002@1500b2f3]" started-at="2026-05-06T14:33:10 IST" name="productTest" data-provider="Items" finished-at="2026-05-06T14:33:40 IST" duration-ms="30066" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -75,11 +155,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- productTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:Test.TC002@1500b2f3]" started-at="2026-04-23T16:44:00 IST" name="tearDown" finished-at="2026-04-23T16:44:01 IST" duration-ms="930" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Test.TC002@1500b2f3]" started-at="2026-05-06T14:33:40 IST" name="tearDown" finished-at="2026-05-06T14:33:41 IST" duration-ms="382" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:Test.TC002@1500b2f3]" started-at="2026-04-23T16:44:01 IST" name="setUp" finished-at="2026-04-23T16:44:06 IST" duration-ms="5923" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:Test.TC002@1500b2f3]" started-at="2026-05-06T14:33:41 IST" name="setUp" finished-at="2026-05-06T14:34:04 IST" duration-ms="23511" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -90,7 +170,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="productTest(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Test.TC002@1500b2f3]" started-at="2026-04-23T16:44:06 IST" name="productTest" data-provider="Items" finished-at="2026-04-23T16:44:13 IST" duration-ms="7012" status="PASS">
+        <test-method signature="productTest(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Test.TC002@1500b2f3]" started-at="2026-05-06T14:34:04 IST" name="productTest" data-provider="Items" finished-at="2026-05-06T14:34:27 IST" duration-ms="22710" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -111,13 +191,13 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- productTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:Test.TC002@1500b2f3]" started-at="2026-04-23T16:44:14 IST" name="tearDown" finished-at="2026-04-23T16:44:14 IST" duration-ms="333" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Test.TC002@1500b2f3]" started-at="2026-05-06T14:34:27 IST" name="tearDown" finished-at="2026-05-06T14:34:28 IST" duration-ms="689" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- Test.TC002 -->
       <class name="Test.TC003">
-        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:Test.TC003@7eecb5b8]" started-at="2026-04-23T16:44:14 IST" name="setUp" finished-at="2026-04-23T16:44:18 IST" duration-ms="4367" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:Test.TC003@7eecb5b8]" started-at="2026-05-06T14:34:28 IST" name="setUp" finished-at="2026-05-06T14:34:47 IST" duration-ms="19425" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -128,15 +208,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="addProductToCart()[pri:0, instance:Test.TC003@7eecb5b8]" started-at="2026-04-23T16:44:18 IST" name="addProductToCart" finished-at="2026-04-23T16:44:26 IST" duration-ms="7521" status="PASS">
+        <test-method signature="addProductToCart()[pri:0, instance:Test.TC003@7eecb5b8]" started-at="2026-05-06T14:34:47 IST" name="addProductToCart" finished-at="2026-05-06T14:35:02 IST" duration-ms="14726" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addProductToCart -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:Test.TC003@7eecb5b8]" started-at="2026-04-23T16:44:26 IST" name="tearDown" finished-at="2026-04-23T16:44:26 IST" duration-ms="254" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Test.TC003@7eecb5b8]" started-at="2026-05-06T14:35:02 IST" name="tearDown" finished-at="2026-05-06T14:35:03 IST" duration-ms="584" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:Test.TC003@7eecb5b8]" started-at="2026-04-23T16:44:26 IST" name="setUp" finished-at="2026-04-23T16:44:30 IST" duration-ms="3978" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:Test.TC003@7eecb5b8]" started-at="2026-05-06T14:35:03 IST" name="setUp" finished-at="2026-05-06T14:35:17 IST" duration-ms="14611" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -147,15 +227,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="addTwoDifferentProduct()[pri:0, instance:Test.TC003@7eecb5b8]" started-at="2026-04-23T16:44:30 IST" name="addTwoDifferentProduct" finished-at="2026-04-23T16:44:39 IST" duration-ms="8564" status="PASS">
+        <test-method signature="addTwoDifferentProduct()[pri:0, instance:Test.TC003@7eecb5b8]" started-at="2026-05-06T14:35:17 IST" name="addTwoDifferentProduct" finished-at="2026-05-06T14:35:41 IST" duration-ms="23958" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addTwoDifferentProduct -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:Test.TC003@7eecb5b8]" started-at="2026-04-23T16:44:39 IST" name="tearDown" finished-at="2026-04-23T16:44:39 IST" duration-ms="365" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Test.TC003@7eecb5b8]" started-at="2026-05-06T14:35:41 IST" name="tearDown" finished-at="2026-05-06T14:35:42 IST" duration-ms="384" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:Test.TC003@7eecb5b8]" started-at="2026-04-23T16:44:39 IST" name="setUp" finished-at="2026-04-23T16:44:47 IST" duration-ms="7580" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:Test.TC003@7eecb5b8]" started-at="2026-05-06T14:35:42 IST" name="setUp" finished-at="2026-05-06T14:35:50 IST" duration-ms="8571" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -166,29 +246,106 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="increaseQuantity()[pri:0, instance:Test.TC003@7eecb5b8]" started-at="2026-04-23T16:44:47 IST" name="increaseQuantity" finished-at="2026-04-23T16:44:56 IST" duration-ms="9475" status="FAIL">
-          <exception class="org.openqa.selenium.ElementClickInterceptedException">
+        <test-method signature="increaseQuantity()[pri:0, instance:Test.TC003@7eecb5b8]" started-at="2026-05-06T14:35:50 IST" name="increaseQuantity" finished-at="2026-05-06T14:36:20 IST" duration-ms="29924" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- increaseQuantity -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Test.TC003@7eecb5b8]" started-at="2026-05-06T14:36:20 IST" name="tearDown" finished-at="2026-05-06T14:36:21 IST" duration-ms="392" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:Test.TC003@7eecb5b8]" started-at="2026-05-06T14:36:21 IST" name="setUp" finished-at="2026-05-06T14:36:43 IST" duration-ms="22391" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="productNameSearch()[pri:0, instance:Test.TC003@7eecb5b8]" started-at="2026-05-06T14:36:43 IST" name="productNameSearch" finished-at="2026-05-06T14:37:16 IST" duration-ms="32763" status="FAIL">
+          <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[element click intercepted: Element <a href="/product_details/28" style="color: brown;">...</a> is not clickable at point (622, 19). Other element would receive the click: <iframe id="aswift_1" name="aswift_1" style="min-height: auto !important; max-height: none !important; min-width: auto !important; max-width: none !important; width: 100vw !important; height: 100vh !important; inset: 0px auto auto 0px !important; position: absolute !important; clear: none !important; display: inline !important; float: none !important; margin: 0px !important; opacity: 1 !important; overflow: visible !important; padding: 0px !important; vertical-align: baseline !important; visibility: visible !important; z-index: auto !important;" sandbox="allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation" width="" height="" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allow="attribution-reporting; run-ad-auction" src="https://googleads.g.doubleclick.net/pagead/html/r20260422/r20190131/zrt_lookup_fy2021.html#RS-0-&amp;adk=1812271808&amp;client=ca-pub-1677597403311019&amp;fa=8&amp;ifi=2&amp;uci=a!2" data-google-container-id="a!2" tabindex="0" title="Advertisement" aria-label="Advertisement" data-google-query-id="CPO3jY_sg5QDFYFWnQkdXnYpAA" data-load-complete="true"></iframe>
-  (Session info: MicrosoftEdge=147.0.3912.72)
-Build info: version: '4.39.0', revision: '126f156aee'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.4'
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [216f45a9c3e571a9d0c662da404b6db5, clickElement {id=f.1961C2930E3A88C066FDE5DDDA2C7D03.d.B1BEFC112360F500FFDD0DE9F9487037.e.175}]
-Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 147.0.3912.72, fedcm:accounts: true, goog:processID: 5328, ms:edgeOptions: {debuggerAddress: localhost:63445}, msedge: {msedgedriverVersion: 147.0.3912.72 (d4380ba2b9dc..., userDataDir: C:\Users\pukki\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63445/devtoo..., se:cdpVersion: 147.0.3912.72, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[[[EdgeDriver: MicrosoftEdge on windows (216f45a9c3e571a9d0c662da404b6db5)] -> xpath: //div[@class='product-image-wrapper']]] -> xpath: .//div[@class='choose']/ul/li/a]
-Session ID: 216f45a9c3e571a9d0c662da404b6db5]]>
+              <![CDATA[expected [9] but found [7]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <a href="/product_details/28" style="color: brown;">...</a> is not clickable at point (622, 19). Other element would receive the click: <iframe id="aswift_1" name="aswift_1" style="min-height: auto !important; max-height: none !important; min-width: auto !important; max-width: none !important; width: 100vw !important; height: 100vh !important; inset: 0px auto auto 0px !important; position: absolute !important; clear: none !important; display: inline !important; float: none !important; margin: 0px !important; opacity: 1 !important; overflow: visible !important; padding: 0px !important; vertical-align: baseline !important; visibility: visible !important; z-index: auto !important;" sandbox="allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation" width="" height="" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allow="attribution-reporting; run-ad-auction" src="https://googleads.g.doubleclick.net/pagead/html/r20260422/r20190131/zrt_lookup_fy2021.html#RS-0-&amp;adk=1812271808&amp;client=ca-pub-1677597403311019&amp;fa=8&amp;ifi=2&amp;uci=a!2" data-google-container-id="a!2" tabindex="0" title="Advertisement" aria-label="Advertisement" data-google-query-id="CPO3jY_sg5QDFYFWnQkdXnYpAA" data-load-complete="true"></iframe>
-  (Session info: MicrosoftEdge=147.0.3912.72)
+              <![CDATA[java.lang.AssertionError: expected [9] but found [7]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1590)
+at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+at org.testng.Assert.assertEquals(Assert.java:132)
+at org.testng.Assert.assertEquals(Assert.java:1431)
+at org.testng.Assert.assertEquals(Assert.java:1395)
+at org.testng.Assert.assertEquals(Assert.java:1441)
+at Test.TC003.productNameSearch(TC003.java:60)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1583)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- productNameSearch -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Test.TC003@7eecb5b8]" started-at="2026-05-06T14:37:16 IST" name="tearDown" finished-at="2026-05-06T14:37:16 IST" duration-ms="343" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- Test.TC003 -->
+      <class name="Test.TC004">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:Test.TC004@126253fd]" started-at="2026-05-06T14:37:16 IST" name="setUp" finished-at="2026-05-06T14:37:30 IST" duration-ms="13268" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="checkoutFlow()[pri:0, instance:Test.TC004@126253fd]" started-at="2026-05-06T14:37:30 IST" name="checkoutFlow" finished-at="2026-05-06T14:37:42 IST" duration-ms="12338" status="FAIL">
+          <exception class="org.openqa.selenium.ElementClickInterceptedException">
+            <message>
+              <![CDATA[element click intercepted: Element <select data-qa="days" id="days" name="days" class="form-control">...</select> is not clickable at point (324, 636). Other element would receive the click: <iframe id="aswift_2" name="aswift_2" style="min-height: auto; max-height: none; min-width: auto; max-width: none; width: 1005px !important; height: 124px !important; display: block; margin: 0px auto;" sandbox="allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation" width="1005" height="124" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allow="attribution-reporting; run-ad-auction" src="https://googleads.g.doubleclick.net/pagead/html/r20260504/r20190131/zrt_lookup_fy2021.html#RS-1-&amp;adk=1812271801&amp;client=ca-pub-1677597403311019&amp;fa=1&amp;ifi=3&amp;uci=a!3&amp;btvi=2" data-google-container-id="a!3" tabindex="0" title="Advertisement" aria-label="Advertisement" data-google-query-id="CMTWyfSnpJQDFRONrAIdW8oU3g" data-load-complete="true"></iframe>
+  (Session info: MicrosoftEdge=147.0.3912.98)
 Build info: version: '4.39.0', revision: '126f156aee'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.4'
 Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [216f45a9c3e571a9d0c662da404b6db5, clickElement {id=f.1961C2930E3A88C066FDE5DDDA2C7D03.d.B1BEFC112360F500FFDD0DE9F9487037.e.175}]
-Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 147.0.3912.72, fedcm:accounts: true, goog:processID: 5328, ms:edgeOptions: {debuggerAddress: localhost:63445}, msedge: {msedgedriverVersion: 147.0.3912.72 (d4380ba2b9dc..., userDataDir: C:\Users\pukki\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63445/devtoo..., se:cdpVersion: 147.0.3912.72, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[[[EdgeDriver: MicrosoftEdge on windows (216f45a9c3e571a9d0c662da404b6db5)] -> xpath: //div[@class='product-image-wrapper']]] -> xpath: .//div[@class='choose']/ul/li/a]
-Session ID: 216f45a9c3e571a9d0c662da404b6db5
+Command: [7819e412320bbcf51afed3fa79e1c5ad, clickElement {id=f.9238A43948A43815E378316105B6B593.d.007DB438B205FE07303FCB5D7F51A1EB.e.76}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 147.0.3912.98, fedcm:accounts: true, goog:processID: 2740, ms:edgeOptions: {debuggerAddress: localhost:49864}, msedge: {msedgedriverVersion: 147.0.3912.98 (6cae4df1a4ff..., userDataDir: C:\Users\pukki\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49864/devtoo..., se:cdpVersion: 147.0.3912.98, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[EdgeDriver: MicrosoftEdge on windows (7819e412320bbcf51afed3fa79e1c5ad)] -> xpath: //select[@id='days']]
+Session ID: 7819e412320bbcf51afed3fa79e1c5ad]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <select data-qa="days" id="days" name="days" class="form-control">...</select> is not clickable at point (324, 636). Other element would receive the click: <iframe id="aswift_2" name="aswift_2" style="min-height: auto; max-height: none; min-width: auto; max-width: none; width: 1005px !important; height: 124px !important; display: block; margin: 0px auto;" sandbox="allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation" width="1005" height="124" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allow="attribution-reporting; run-ad-auction" src="https://googleads.g.doubleclick.net/pagead/html/r20260504/r20190131/zrt_lookup_fy2021.html#RS-1-&amp;adk=1812271801&amp;client=ca-pub-1677597403311019&amp;fa=1&amp;ifi=3&amp;uci=a!3&amp;btvi=2" data-google-container-id="a!3" tabindex="0" title="Advertisement" aria-label="Advertisement" data-google-query-id="CMTWyfSnpJQDFRONrAIdW8oU3g" data-load-complete="true"></iframe>
+  (Session info: MicrosoftEdge=147.0.3912.98)
+Build info: version: '4.39.0', revision: '126f156aee'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.4'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [7819e412320bbcf51afed3fa79e1c5ad, clickElement {id=f.9238A43948A43815E378316105B6B593.d.007DB438B205FE07303FCB5D7F51A1EB.e.76}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 147.0.3912.98, fedcm:accounts: true, goog:processID: 2740, ms:edgeOptions: {debuggerAddress: localhost:49864}, msedge: {msedgedriverVersion: 147.0.3912.98 (6cae4df1a4ff..., userDataDir: C:\Users\pukki\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49864/devtoo..., se:cdpVersion: 147.0.3912.98, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[EdgeDriver: MicrosoftEdge on windows (7819e412320bbcf51afed3fa79e1c5ad)] -> xpath: //select[@id='days']]
+Session ID: 7819e412320bbcf51afed3fa79e1c5ad
 at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
 at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
 at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
@@ -201,8 +358,9 @@ at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverComman
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:561)
 at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
 at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
-at pages.ProductPage.getToIncreaseQuantity(ProductPage.java:138)
-at Test.TC003.increaseQuantity(TC003.java:37)
+at pages.loginValidation.getValueInDropDown(loginValidation.java:70)
+at pages.loginValidation.userDetails(loginValidation.java:81)
+at Test.TC004.checkoutFlow(TC004.java:45)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -228,89 +386,12 @@ at java.base/java.lang.Thread.run(Thread.java:1583)
           </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- increaseQuantity -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:Test.TC003@7eecb5b8]" started-at="2026-04-23T16:44:57 IST" name="tearDown" finished-at="2026-04-23T16:44:57 IST" duration-ms="462" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:Test.TC003@7eecb5b8]" started-at="2026-04-23T16:44:57 IST" name="setUp" finished-at="2026-04-23T16:45:03 IST" duration-ms="5441" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[edge]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="productNameSearch()[pri:0, instance:Test.TC003@7eecb5b8]" started-at="2026-04-23T16:45:03 IST" name="productNameSearch" finished-at="2026-04-23T16:45:08 IST" duration-ms="5568" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [9] but found [7]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [9] but found [7]
-at org.testng.Assert.fail(Assert.java:111)
-at org.testng.Assert.failNotEquals(Assert.java:1590)
-at org.testng.Assert.assertEqualsImpl(Assert.java:150)
-at org.testng.Assert.assertEquals(Assert.java:132)
-at org.testng.Assert.assertEquals(Assert.java:1431)
-at org.testng.Assert.assertEquals(Assert.java:1395)
-at org.testng.Assert.assertEquals(Assert.java:1441)
-at Test.TC003.productNameSearch(TC003.java:60)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:741)
-at org.testng.TestRunner.run(TestRunner.java:616)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
-at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-at java.base/java.lang.Thread.run(Thread.java:1583)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- productNameSearch -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:Test.TC003@7eecb5b8]" started-at="2026-04-23T16:45:08 IST" name="tearDown" finished-at="2026-04-23T16:45:09 IST" duration-ms="574" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- Test.TC003 -->
-      <class name="Test.TC004">
-        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:Test.TC004@126253fd]" started-at="2026-04-23T16:45:09 IST" name="setUp" finished-at="2026-04-23T16:45:14 IST" duration-ms="5222" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[edge]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="checkoutFlow()[pri:0, instance:Test.TC004@126253fd]" started-at="2026-04-23T16:45:14 IST" name="checkoutFlow" finished-at="2026-04-23T16:45:34 IST" duration-ms="20263" status="PASS">
-          <reporter-output>
-          </reporter-output>
         </test-method> <!-- checkoutFlow -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:Test.TC004@126253fd]" started-at="2026-04-23T16:45:35 IST" name="tearDown" finished-at="2026-04-23T16:45:35 IST" duration-ms="513" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Test.TC004@126253fd]" started-at="2026-05-06T14:37:42 IST" name="tearDown" finished-at="2026-05-06T14:37:43 IST" duration-ms="357" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:Test.TC004@126253fd]" started-at="2026-04-23T16:45:35 IST" name="setUp" finished-at="2026-04-23T16:45:39 IST" duration-ms="4108" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:Test.TC004@126253fd]" started-at="2026-05-06T14:37:43 IST" name="setUp" finished-at="2026-05-06T14:37:58 IST" duration-ms="15337" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -321,17 +402,17 @@ at java.base/java.lang.Thread.run(Thread.java:1583)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="multiProductCartLogic()[pri:0, instance:Test.TC004@126253fd]" started-at="2026-04-23T16:45:39 IST" name="multiProductCartLogic" finished-at="2026-04-23T16:45:51 IST" duration-ms="11401" status="PASS">
+        <test-method signature="multiProductCartLogic()[pri:0, instance:Test.TC004@126253fd]" started-at="2026-05-06T14:37:58 IST" name="multiProductCartLogic" finished-at="2026-05-06T14:38:28 IST" duration-ms="29725" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- multiProductCartLogic -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:Test.TC004@126253fd]" started-at="2026-04-23T16:45:51 IST" name="tearDown" finished-at="2026-04-23T16:45:51 IST" duration-ms="349" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Test.TC004@126253fd]" started-at="2026-05-06T14:38:28 IST" name="tearDown" finished-at="2026-05-06T14:38:28 IST" duration-ms="405" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- Test.TC004 -->
       <class name="Test.MainTest">
-        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:Test.MainTest@28cda624]" started-at="2026-04-23T16:43:09 IST" name="setUp" finished-at="2026-04-23T16:43:20 IST" duration-ms="11432" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:Test.MainTest@28cda624]" started-at="2026-05-06T14:30:34 IST" name="setUp" finished-at="2026-05-06T14:31:09 IST" duration-ms="34933" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -342,19 +423,19 @@ at java.base/java.lang.Thread.run(Thread.java:1583)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="loginTest()[pri:0, instance:Test.MainTest@28cda624]" started-at="2026-04-23T16:43:20 IST" name="loginTest" finished-at="2026-04-23T16:43:30 IST" duration-ms="9598" status="PASS">
+        <test-method signature="loginTest()[pri:0, instance:Test.MainTest@28cda624]" started-at="2026-05-06T14:31:09 IST" name="loginTest" finished-at="2026-05-06T14:31:38 IST" duration-ms="28280" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:Test.MainTest@28cda624]" started-at="2026-04-23T16:43:30 IST" name="tearDown" finished-at="2026-04-23T16:43:31 IST" duration-ms="468" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Test.MainTest@28cda624]" started-at="2026-05-06T14:31:38 IST" name="tearDown" finished-at="2026-05-06T14:31:38 IST" duration-ms="352" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- Test.MainTest -->
     </test> <!-- EdgeTest -->
-    <test started-at="2026-04-23T16:43:09 IST" name="ChromeTest" finished-at="2026-04-23T16:46:00 IST" duration-ms="171587">
+    <test started-at="2026-05-06T14:30:34 IST" name="ChromeTest" finished-at="2026-05-06T14:39:46 IST" duration-ms="551827">
       <class name="Test.TC002">
-        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:Test.TC002@239a307b]" started-at="2026-04-23T16:43:42 IST" name="setUp" finished-at="2026-04-23T16:43:47 IST" duration-ms="4812" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:Test.TC002@239a307b]" started-at="2026-05-06T14:31:27 IST" name="setUp" finished-at="2026-05-06T14:31:46 IST" duration-ms="19122" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -365,7 +446,7 @@ at java.base/java.lang.Thread.run(Thread.java:1583)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="productTest(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Test.TC002@239a307b]" started-at="2026-04-23T16:43:47 IST" name="productTest" data-provider="Items" finished-at="2026-04-23T16:43:56 IST" duration-ms="8667" status="PASS">
+        <test-method signature="productTest(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Test.TC002@239a307b]" started-at="2026-05-06T14:31:46 IST" name="productTest" data-provider="Items" finished-at="2026-05-06T14:32:16 IST" duration-ms="29744" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -386,11 +467,11 @@ at java.base/java.lang.Thread.run(Thread.java:1583)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- productTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:Test.TC002@239a307b]" started-at="2026-04-23T16:43:56 IST" name="tearDown" finished-at="2026-04-23T16:43:56 IST" duration-ms="322" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Test.TC002@239a307b]" started-at="2026-05-06T14:32:16 IST" name="tearDown" finished-at="2026-05-06T14:32:16 IST" duration-ms="291" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:Test.TC002@239a307b]" started-at="2026-04-23T16:43:56 IST" name="setUp" finished-at="2026-04-23T16:44:00 IST" duration-ms="4018" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:Test.TC002@239a307b]" started-at="2026-05-06T14:32:16 IST" name="setUp" finished-at="2026-05-06T14:32:20 IST" duration-ms="3685" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -401,7 +482,87 @@ at java.base/java.lang.Thread.run(Thread.java:1583)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="productTest(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Test.TC002@239a307b]" started-at="2026-04-23T16:44:00 IST" name="productTest" data-provider="Items" finished-at="2026-04-23T16:44:07 IST" duration-ms="6919" status="PASS">
+        <test-method retried="true" signature="productTest(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Test.TC002@239a307b]" started-at="2026-05-06T14:32:20 IST" name="productTest" data-provider="Items" finished-at="2026-05-06T14:32:30 IST" duration-ms="10079" status="SKIP">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Jeans]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Soft Stretch Jeans]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Rs. 799]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for element to be clickable: By.xpath: //a[@href='/products'] (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '4.39.0', revision: '126f156aee'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.4'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 147.0.7727.138, chrome: {chromedriverVersion: 147.0.7727.117 (474cc805edd..., userDataDir: C:\Users\pukki\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63397}, goog:processID: 17032, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63397/devtoo..., se:cdpVersion: 147.0.7727.138, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: bc3eb2ea6a41a78c3f09e69154663aff]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.xpath: //a[@href='/products'] (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '4.39.0', revision: '126f156aee'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.4'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 147.0.7727.138, chrome: {chromedriverVersion: 147.0.7727.117 (474cc805edd..., userDataDir: C:\Users\pukki\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63397}, goog:processID: 17032, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63397/devtoo..., se:cdpVersion: 147.0.7727.138, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: bc3eb2ea6a41a78c3f09e69154663aff
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+at utils.waitClass.clickForElementWait(waitClass.java:26)
+at pages.ProductPage.searchProducts(ProductPage.java:42)
+at Test.TC002.productTest(TC002.java:20)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1583)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- productTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Test.TC002@239a307b]" started-at="2026-05-06T14:32:30 IST" name="tearDown" finished-at="2026-05-06T14:32:30 IST" duration-ms="344" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:Test.TC002@239a307b]" started-at="2026-05-06T14:32:30 IST" name="setUp" finished-at="2026-05-06T14:32:45 IST" duration-ms="14573" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="productTest(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Test.TC002@239a307b]" started-at="2026-05-06T14:32:45 IST" name="productTest" data-provider="Items" finished-at="2026-05-06T14:33:43 IST" duration-ms="58353" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -422,11 +583,11 @@ at java.base/java.lang.Thread.run(Thread.java:1583)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- productTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:Test.TC002@239a307b]" started-at="2026-04-23T16:44:08 IST" name="tearDown" finished-at="2026-04-23T16:44:08 IST" duration-ms="349" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Test.TC002@239a307b]" started-at="2026-05-06T14:33:43 IST" name="tearDown" finished-at="2026-05-06T14:33:44 IST" duration-ms="359" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:Test.TC002@239a307b]" started-at="2026-04-23T16:44:08 IST" name="setUp" finished-at="2026-04-23T16:44:12 IST" duration-ms="4045" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:Test.TC002@239a307b]" started-at="2026-05-06T14:33:44 IST" name="setUp" finished-at="2026-05-06T14:33:46 IST" duration-ms="2425" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -437,7 +598,110 @@ at java.base/java.lang.Thread.run(Thread.java:1583)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="productTest(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Test.TC002@239a307b]" started-at="2026-04-23T16:44:12 IST" name="productTest" data-provider="Items" finished-at="2026-04-23T16:44:20 IST" duration-ms="7943" status="PASS">
+        <test-method retried="true" signature="productTest(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Test.TC002@239a307b]" started-at="2026-05-06T14:33:46 IST" name="productTest" data-provider="Items" finished-at="2026-05-06T14:33:52 IST" duration-ms="6087" status="SKIP">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Dress]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Sleeveless Dress]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Rs. 1000]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchSessionException">
+            <message>
+              <![CDATA[invalid session id: session deleted as the browser has closed the connection
+from disconnected: not connected to DevTools
+  (Session info: chrome=147.0.7727.138)
+Build info: version: '4.39.0', revision: '126f156aee'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.4'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [08d07e38a8c2ba176f2f9b9ebfea2cb2, findElement {using=xpath, value=//a[@href='/products']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 147.0.7727.138, chrome: {chromedriverVersion: 147.0.7727.117 (474cc805edd..., userDataDir: C:\Users\pukki\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54419}, goog:processID: 18908, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54419/devtoo..., se:cdpVersion: 147.0.7727.138, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 08d07e38a8c2ba176f2f9b9ebfea2cb2]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchSessionException: invalid session id: session deleted as the browser has closed the connection
+from disconnected: not connected to DevTools
+  (Session info: chrome=147.0.7727.138)
+Build info: version: '4.39.0', revision: '126f156aee'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.4'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [08d07e38a8c2ba176f2f9b9ebfea2cb2, findElement {using=xpath, value=//a[@href='/products']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 147.0.7727.138, chrome: {chromedriverVersion: 147.0.7727.117 (474cc805edd..., userDataDir: C:\Users\pukki\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54419}, goog:processID: 18908, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54419/devtoo..., se:cdpVersion: 147.0.7727.138, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 08d07e38a8c2ba176f2f9b9ebfea2cb2
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:142)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:561)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:166)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:384)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:378)
+at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:198)
+at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:194)
+at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:632)
+at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:629)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
+at utils.waitClass.clickForElementWait(waitClass.java:26)
+at pages.ProductPage.searchProducts(ProductPage.java:42)
+at Test.TC002.productTest(TC002.java:20)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1583)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchSessionException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- productTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Test.TC002@239a307b]" started-at="2026-05-06T14:33:52 IST" name="tearDown" finished-at="2026-05-06T14:33:52 IST" duration-ms="110" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:Test.TC002@239a307b]" started-at="2026-05-06T14:33:52 IST" name="setUp" finished-at="2026-05-06T14:34:10 IST" duration-ms="18129" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="productTest(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Test.TC002@239a307b]" started-at="2026-05-06T14:34:10 IST" name="productTest" data-provider="Items" finished-at="2026-05-06T14:34:53 IST" duration-ms="42634" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -458,13 +722,13 @@ at java.base/java.lang.Thread.run(Thread.java:1583)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- productTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:Test.TC002@239a307b]" started-at="2026-04-23T16:44:20 IST" name="tearDown" finished-at="2026-04-23T16:44:20 IST" duration-ms="388" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Test.TC002@239a307b]" started-at="2026-05-06T14:34:53 IST" name="tearDown" finished-at="2026-05-06T14:34:56 IST" duration-ms="2269" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- Test.TC002 -->
       <class name="Test.TC003">
-        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:Test.TC003@2a8448fa]" started-at="2026-04-23T16:44:20 IST" name="setUp" finished-at="2026-04-23T16:44:26 IST" duration-ms="5556" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:Test.TC003@2a8448fa]" started-at="2026-05-06T14:34:56 IST" name="setUp" finished-at="2026-05-06T14:35:09 IST" duration-ms="13808" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -475,15 +739,15 @@ at java.base/java.lang.Thread.run(Thread.java:1583)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="addProductToCart()[pri:0, instance:Test.TC003@2a8448fa]" started-at="2026-04-23T16:44:26 IST" name="addProductToCart" finished-at="2026-04-23T16:44:32 IST" duration-ms="6000" status="PASS">
+        <test-method signature="addProductToCart()[pri:0, instance:Test.TC003@2a8448fa]" started-at="2026-05-06T14:35:09 IST" name="addProductToCart" finished-at="2026-05-06T14:35:25 IST" duration-ms="15563" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addProductToCart -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:Test.TC003@2a8448fa]" started-at="2026-04-23T16:44:32 IST" name="tearDown" finished-at="2026-04-23T16:44:33 IST" duration-ms="426" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Test.TC003@2a8448fa]" started-at="2026-05-06T14:35:25 IST" name="tearDown" finished-at="2026-05-06T14:35:26 IST" duration-ms="551" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:Test.TC003@2a8448fa]" started-at="2026-04-23T16:44:33 IST" name="setUp" finished-at="2026-04-23T16:44:36 IST" duration-ms="3888" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:Test.TC003@2a8448fa]" started-at="2026-05-06T14:35:26 IST" name="setUp" finished-at="2026-05-06T14:35:35 IST" duration-ms="9393" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -494,15 +758,15 @@ at java.base/java.lang.Thread.run(Thread.java:1583)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="addTwoDifferentProduct()[pri:0, instance:Test.TC003@2a8448fa]" started-at="2026-04-23T16:44:36 IST" name="addTwoDifferentProduct" finished-at="2026-04-23T16:44:45 IST" duration-ms="8708" status="PASS">
+        <test-method signature="addTwoDifferentProduct()[pri:0, instance:Test.TC003@2a8448fa]" started-at="2026-05-06T14:35:35 IST" name="addTwoDifferentProduct" finished-at="2026-05-06T14:35:58 IST" duration-ms="23323" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addTwoDifferentProduct -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:Test.TC003@2a8448fa]" started-at="2026-04-23T16:44:46 IST" name="tearDown" finished-at="2026-04-23T16:44:46 IST" duration-ms="383" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Test.TC003@2a8448fa]" started-at="2026-05-06T14:35:59 IST" name="tearDown" finished-at="2026-05-06T14:35:59 IST" duration-ms="926" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:Test.TC003@2a8448fa]" started-at="2026-04-23T16:44:46 IST" name="setUp" finished-at="2026-04-23T16:44:52 IST" duration-ms="6290" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:Test.TC003@2a8448fa]" started-at="2026-05-06T14:35:59 IST" name="setUp" finished-at="2026-05-06T14:36:22 IST" duration-ms="22204" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -513,15 +777,15 @@ at java.base/java.lang.Thread.run(Thread.java:1583)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="increaseQuantity()[pri:0, instance:Test.TC003@2a8448fa]" started-at="2026-04-23T16:44:52 IST" name="increaseQuantity" finished-at="2026-04-23T16:45:03 IST" duration-ms="10479" status="PASS">
+        <test-method signature="increaseQuantity()[pri:0, instance:Test.TC003@2a8448fa]" started-at="2026-05-06T14:36:22 IST" name="increaseQuantity" finished-at="2026-05-06T14:37:14 IST" duration-ms="52183" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- increaseQuantity -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:Test.TC003@2a8448fa]" started-at="2026-04-23T16:45:03 IST" name="tearDown" finished-at="2026-04-23T16:45:04 IST" duration-ms="861" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Test.TC003@2a8448fa]" started-at="2026-05-06T14:37:14 IST" name="tearDown" finished-at="2026-05-06T14:37:15 IST" duration-ms="476" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:Test.TC003@2a8448fa]" started-at="2026-04-23T16:45:04 IST" name="setUp" finished-at="2026-04-23T16:45:07 IST" duration-ms="3603" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:Test.TC003@2a8448fa]" started-at="2026-05-06T14:37:15 IST" name="setUp" finished-at="2026-05-06T14:37:31 IST" duration-ms="16370" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -532,7 +796,7 @@ at java.base/java.lang.Thread.run(Thread.java:1583)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="productNameSearch()[pri:0, instance:Test.TC003@2a8448fa]" started-at="2026-04-23T16:45:07 IST" name="productNameSearch" finished-at="2026-04-23T16:45:13 IST" duration-ms="5161" status="FAIL">
+        <test-method signature="productNameSearch()[pri:0, instance:Test.TC003@2a8448fa]" started-at="2026-05-06T14:37:31 IST" name="productNameSearch" finished-at="2026-05-06T14:37:50 IST" duration-ms="19485" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [9] but found [7]]]>
@@ -573,13 +837,13 @@ at java.base/java.lang.Thread.run(Thread.java:1583)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- productNameSearch -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:Test.TC003@2a8448fa]" started-at="2026-04-23T16:45:13 IST" name="tearDown" finished-at="2026-04-23T16:45:13 IST" duration-ms="278" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Test.TC003@2a8448fa]" started-at="2026-05-06T14:37:51 IST" name="tearDown" finished-at="2026-05-06T14:37:52 IST" duration-ms="1114" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- Test.TC003 -->
       <class name="Test.TC004">
-        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:Test.TC004@6f204a1a]" started-at="2026-04-23T16:45:13 IST" name="setUp" finished-at="2026-04-23T16:45:15 IST" duration-ms="2287" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:Test.TC004@6f204a1a]" started-at="2026-05-06T14:37:52 IST" name="setUp" finished-at="2026-05-06T14:37:59 IST" duration-ms="7804" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -590,15 +854,75 @@ at java.base/java.lang.Thread.run(Thread.java:1583)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="checkoutFlow()[pri:0, instance:Test.TC004@6f204a1a]" started-at="2026-04-23T16:45:15 IST" name="checkoutFlow" finished-at="2026-04-23T16:45:41 IST" duration-ms="25900" status="PASS">
+        <test-method signature="checkoutFlow()[pri:0, instance:Test.TC004@6f204a1a]" started-at="2026-05-06T14:37:59 IST" name="checkoutFlow" finished-at="2026-05-06T14:38:20 IST" duration-ms="20224" status="FAIL">
+          <exception class="org.openqa.selenium.ElementClickInterceptedException">
+            <message>
+              <![CDATA[element click intercepted: Element <select data-qa="months" id="months" name="months" class="form-control">...</select> is not clickable at point (461, 636). Other element would receive the click: <iframe id="aswift_1" name="aswift_1" style="min-height: auto; max-height: none; min-width: auto; max-width: none; width: 728px !important; height: 90px !important; display: block; margin: 0px auto;" sandbox="allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation" width="728" height="90" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allow="attribution-reporting; run-ad-auction" src="https://googleads.g.doubleclick.net/pagead/html/r20260504/r20190131/zrt_lookup_fy2021.html#RS-1-&amp;adk=1812271801&amp;client=ca-pub-1677597403311019&amp;fa=1&amp;ifi=2&amp;uci=a!2&amp;btvi=1" data-google-container-id="a!2" tabindex="0" title="Advertisement" aria-label="Advertisement" data-google-query-id="CLHD9oeopJQDFcOz6QUdKmgEbA" data-load-complete="true"></iframe>
+  (Session info: chrome=147.0.7727.138)
+Build info: version: '4.39.0', revision: '126f156aee'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.4'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [e84b23408b1aa6b9abc57f5888fc2a82, clickElement {id=f.01BA85598FEED9C66BC5DCE632B655A8.d.955A95CE32C28BF87CDCE3EAC0B7DBFD.e.86}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 147.0.7727.138, chrome: {chromedriverVersion: 147.0.7727.117 (474cc805edd..., userDataDir: C:\Users\pukki\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62905}, goog:processID: 11720, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62905/devtoo..., se:cdpVersion: 147.0.7727.138, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (e84b23408b1aa6b9abc57f5888fc2a82)] -> xpath: //select[@id='months']]
+Session ID: e84b23408b1aa6b9abc57f5888fc2a82]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <select data-qa="months" id="months" name="months" class="form-control">...</select> is not clickable at point (461, 636). Other element would receive the click: <iframe id="aswift_1" name="aswift_1" style="min-height: auto; max-height: none; min-width: auto; max-width: none; width: 728px !important; height: 90px !important; display: block; margin: 0px auto;" sandbox="allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation" width="728" height="90" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allow="attribution-reporting; run-ad-auction" src="https://googleads.g.doubleclick.net/pagead/html/r20260504/r20190131/zrt_lookup_fy2021.html#RS-1-&amp;adk=1812271801&amp;client=ca-pub-1677597403311019&amp;fa=1&amp;ifi=2&amp;uci=a!2&amp;btvi=1" data-google-container-id="a!2" tabindex="0" title="Advertisement" aria-label="Advertisement" data-google-query-id="CLHD9oeopJQDFcOz6QUdKmgEbA" data-load-complete="true"></iframe>
+  (Session info: chrome=147.0.7727.138)
+Build info: version: '4.39.0', revision: '126f156aee'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.4'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [e84b23408b1aa6b9abc57f5888fc2a82, clickElement {id=f.01BA85598FEED9C66BC5DCE632B655A8.d.955A95CE32C28BF87CDCE3EAC0B7DBFD.e.86}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 147.0.7727.138, chrome: {chromedriverVersion: 147.0.7727.117 (474cc805edd..., userDataDir: C:\Users\pukki\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62905}, goog:processID: 11720, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62905/devtoo..., se:cdpVersion: 147.0.7727.138, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (e84b23408b1aa6b9abc57f5888fc2a82)] -> xpath: //select[@id='months']]
+Session ID: e84b23408b1aa6b9abc57f5888fc2a82
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:142)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:561)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+at pages.loginValidation.getValueInDropDown(loginValidation.java:70)
+at pages.loginValidation.userDetails(loginValidation.java:82)
+at Test.TC004.checkoutFlow(TC004.java:45)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1583)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkoutFlow -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:Test.TC004@6f204a1a]" started-at="2026-04-23T16:45:41 IST" name="tearDown" finished-at="2026-04-23T16:45:42 IST" duration-ms="352" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Test.TC004@6f204a1a]" started-at="2026-05-06T14:38:21 IST" name="tearDown" finished-at="2026-05-06T14:38:22 IST" duration-ms="497" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:Test.TC004@6f204a1a]" started-at="2026-04-23T16:45:42 IST" name="setUp" finished-at="2026-04-23T16:45:47 IST" duration-ms="5061" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:Test.TC004@6f204a1a]" started-at="2026-05-06T14:38:22 IST" name="setUp" finished-at="2026-05-06T14:38:33 IST" duration-ms="11262" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -609,17 +933,17 @@ at java.base/java.lang.Thread.run(Thread.java:1583)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="multiProductCartLogic()[pri:0, instance:Test.TC004@6f204a1a]" started-at="2026-04-23T16:45:47 IST" name="multiProductCartLogic" finished-at="2026-04-23T16:46:00 IST" duration-ms="12954" status="PASS">
+        <test-method signature="multiProductCartLogic()[pri:0, instance:Test.TC004@6f204a1a]" started-at="2026-05-06T14:38:33 IST" name="multiProductCartLogic" finished-at="2026-05-06T14:39:45 IST" duration-ms="72296" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- multiProductCartLogic -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:Test.TC004@6f204a1a]" started-at="2026-04-23T16:46:00 IST" name="tearDown" finished-at="2026-04-23T16:46:00 IST" duration-ms="283" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Test.TC004@6f204a1a]" started-at="2026-05-06T14:39:46 IST" name="tearDown" finished-at="2026-05-06T14:39:46 IST" duration-ms="456" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- Test.TC004 -->
       <class name="Test.MainTest">
-        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:Test.MainTest@7d9d0818]" started-at="2026-04-23T16:43:09 IST" name="setUp" finished-at="2026-04-23T16:43:26 IST" duration-ms="17638" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:Test.MainTest@7d9d0818]" started-at="2026-05-06T14:30:34 IST" name="setUp" finished-at="2026-05-06T14:31:14 IST" duration-ms="39548" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -630,11 +954,71 @@ at java.base/java.lang.Thread.run(Thread.java:1583)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="loginTest()[pri:0, instance:Test.MainTest@7d9d0818]" started-at="2026-04-23T16:43:26 IST" name="loginTest" finished-at="2026-04-23T16:43:40 IST" duration-ms="13245" status="PASS">
+        <test-method signature="loginTest()[pri:0, instance:Test.MainTest@7d9d0818]" started-at="2026-05-06T14:31:14 IST" name="loginTest" finished-at="2026-05-06T14:31:26 IST" duration-ms="12307" status="FAIL">
+          <exception class="org.openqa.selenium.ElementClickInterceptedException">
+            <message>
+              <![CDATA[element click intercepted: Element <select data-qa="months" id="months" name="months" class="form-control">...</select> is not clickable at point (461, 636). Other element would receive the click: <iframe id="aswift_1" name="aswift_1" style="min-height: auto; max-height: none; min-width: auto; max-width: none; width: 728px !important; height: 90px !important; display: block; margin: 0px auto;" sandbox="allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation" width="728" height="90" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allow="attribution-reporting; run-ad-auction" src="https://googleads.g.doubleclick.net/pagead/html/r20260504/r20190131/zrt_lookup_fy2021.html#RS-1-&amp;adk=1812271801&amp;client=ca-pub-1677597403311019&amp;fa=1&amp;ifi=2&amp;uci=a!2&amp;btvi=1" data-google-container-id="a!2" tabindex="0" title="Advertisement" aria-label="Advertisement" data-google-query-id="CPbD6sOmpJQDFc6YuQUdwjsbnQ"></iframe>
+  (Session info: chrome=147.0.7727.138)
+Build info: version: '4.39.0', revision: '126f156aee'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.4'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [e5a2b8ab8093367b1a9d3571b25543ce, clickElement {id=f.0A3FCBA80DD28D5F8D1BEEB324DBA25E.d.A84B80828825491C82677C4E083EBCA8.e.88}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 147.0.7727.138, chrome: {chromedriverVersion: 147.0.7727.117 (474cc805edd..., userDataDir: C:\Users\pukki\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52251}, goog:processID: 23852, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52251/devtoo..., se:cdpVersion: 147.0.7727.138, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (e5a2b8ab8093367b1a9d3571b25543ce)] -> xpath: //select[@id='months']]
+Session ID: e5a2b8ab8093367b1a9d3571b25543ce]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <select data-qa="months" id="months" name="months" class="form-control">...</select> is not clickable at point (461, 636). Other element would receive the click: <iframe id="aswift_1" name="aswift_1" style="min-height: auto; max-height: none; min-width: auto; max-width: none; width: 728px !important; height: 90px !important; display: block; margin: 0px auto;" sandbox="allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation" width="728" height="90" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allow="attribution-reporting; run-ad-auction" src="https://googleads.g.doubleclick.net/pagead/html/r20260504/r20190131/zrt_lookup_fy2021.html#RS-1-&amp;adk=1812271801&amp;client=ca-pub-1677597403311019&amp;fa=1&amp;ifi=2&amp;uci=a!2&amp;btvi=1" data-google-container-id="a!2" tabindex="0" title="Advertisement" aria-label="Advertisement" data-google-query-id="CPbD6sOmpJQDFc6YuQUdwjsbnQ"></iframe>
+  (Session info: chrome=147.0.7727.138)
+Build info: version: '4.39.0', revision: '126f156aee'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.4'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [e5a2b8ab8093367b1a9d3571b25543ce, clickElement {id=f.0A3FCBA80DD28D5F8D1BEEB324DBA25E.d.A84B80828825491C82677C4E083EBCA8.e.88}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 147.0.7727.138, chrome: {chromedriverVersion: 147.0.7727.117 (474cc805edd..., userDataDir: C:\Users\pukki\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52251}, goog:processID: 23852, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52251/devtoo..., se:cdpVersion: 147.0.7727.138, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (e5a2b8ab8093367b1a9d3571b25543ce)] -> xpath: //select[@id='months']]
+Session ID: e5a2b8ab8093367b1a9d3571b25543ce
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:142)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:561)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+at pages.loginValidation.getValueInDropDown(loginValidation.java:70)
+at pages.loginValidation.userDetails(loginValidation.java:82)
+at Test.MainTest.loginTest(MainTest.java:22)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1583)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:Test.MainTest@7d9d0818]" started-at="2026-04-23T16:43:41 IST" name="tearDown" finished-at="2026-04-23T16:43:42 IST" duration-ms="1496" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Test.MainTest@7d9d0818]" started-at="2026-05-06T14:31:27 IST" name="tearDown" finished-at="2026-05-06T14:31:27 IST" duration-ms="363" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

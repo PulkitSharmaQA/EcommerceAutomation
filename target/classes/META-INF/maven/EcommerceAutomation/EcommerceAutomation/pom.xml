@@ -58,15 +58,5 @@
 			<artifactId>poi-ooxml</artifactId>
 			<version>5.2.5</version>
 		</dependency>
-		<dependency>
-			<groupId>EcommerceAutomationFramework</groupId>
-			<artifactId>EcommerceAutomationFramework</artifactId>
-			<version>0.0.1-SNAPSHOT</version>
-		</dependency>
-		<dependency>
-			<groupId>makeMyTripAutomation</groupId>
-			<artifactId>makeMyTripAutomation</artifactId>
-			<version>0.0.1-SNAPSHOT</version>
-		</dependency>
 	</dependencies>
 </project>
