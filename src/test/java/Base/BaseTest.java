@@ -21,7 +21,7 @@ public class BaseTest {
 	public configReader configData;
 
 	
-	
+	//String br = "chrome";
 	@BeforeMethod
 	@Parameters({ "browser" })
 	public void setUp(@Optional("chrome")String br) throws IOException {

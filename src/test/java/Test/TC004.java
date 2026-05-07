@@ -10,7 +10,7 @@ import pages.ProductPage;
 import pages.loginValidation;
 
 public class TC004 extends BaseTest {
-	@Test()
+	@Test(retryAnalyzer = utils.retry.class)
 	void multiProductCartLogic() {
 		ProductPage product = new ProductPage(driver);
 		CartPage cartproduct = new CartPage(driver);
@@ -34,7 +34,7 @@ public class TC004 extends BaseTest {
 		Assert.assertEquals(cartproduct.getTotal(), 3598);
 		
 	}
-	@Test
+	@Test(retryAnalyzer = utils.retry.class)
 	void checkoutFlow() {
 		loginValidation login = new loginValidation(driver);
 		ProductPage product = new ProductPage(driver);

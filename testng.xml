@@ -10,8 +10,8 @@
     <classes>
       <class name="Test.MainTest"/>
       <class name="Test.TC002"/>
-      <!--class name="Test.TC003"/-->
-      <!--class name="Test.TC004"/-->
+      <class name="Test.TC003"/>
+      <class name="Test.TC004"/>
       
     </classes>
   </test> <!-- Test -->
@@ -20,8 +20,8 @@
     <classes>
       <class name="Test.MainTest"/>
       <class name="Test.TC002"/>
-      <!--class name="Test.TC003"/-->
-      <!--class name="Test.TC004"/-->
+      <class name="Test.TC003"/>
+      <class name="Test.TC004"/>
       
     </classes>
   </test> <!-- Test -->

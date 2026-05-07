@@ -5,36 +5,11 @@
     <classes>
       <class name="Test.TC004">
         <methods>
-          <include name="multiProductCartLogic"/>
           <include name="checkoutFlow"/>
           <include name="tearDown"/>
           <include name="setUp"/>
         </methods>
       </class> <!-- Test.TC004 -->
-      <class name="Test.TC003">
-        <methods>
-          <include name="increaseQuantity"/>
-          <include name="addProductToCart"/>
-          <include name="addTwoDifferentProduct"/>
-          <include name="productNameSearch"/>
-          <include name="tearDown"/>
-          <include name="setUp"/>
-        </methods>
-      </class> <!-- Test.TC003 -->
-      <class name="Test.TC002">
-        <methods>
-          <include name="productTest"/>
-          <include name="tearDown"/>
-          <include name="setUp"/>
-        </methods>
-      </class> <!-- Test.TC002 -->
-      <class name="Test.MainTest">
-        <methods>
-          <include name="loginTest"/>
-          <include name="tearDown"/>
-          <include name="setUp"/>
-        </methods>
-      </class> <!-- Test.MainTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

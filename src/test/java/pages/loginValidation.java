@@ -98,7 +98,9 @@ public class loginValidation {
 		wait.visibilityOfElementWait(city).sendKeys("Bhopal");
 		wait.visibilityOfElementWait(zipCode).sendKeys("8327934");
 		wait.visibilityOfElementWait(number).sendKeys("9876543210");
-		wait.clickForElementWait(creatAccount).click();
+		WebElement signUpClick =  wait.clickForElementWait(creatAccount);
+		SmartActions.scrollToElement(signUpClick);
+		SmartActions.jsClick(signUpClick);
 		
 	}
 	

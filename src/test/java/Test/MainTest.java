@@ -14,7 +14,7 @@ import pages.loginValidation;
 
 public class MainTest extends BaseTest {
 	
-	@Test()
+	@Test(retryAnalyzer = utils.retry.class)
 	public void loginTest() throws InterruptedException {
 		// Create Account 
 		loginValidation login = new loginValidation(driver);

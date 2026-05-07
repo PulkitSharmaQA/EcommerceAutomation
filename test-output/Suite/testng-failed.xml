@@ -4,25 +4,6 @@
   <listeners>
     <listener class-name="listteners.ExtentManager"/>
   </listeners>
-  <test thread-count="5" parallel="tests" name="EdgeTest(failed)">
-    <parameter name="browser" value="edge"/>
-    <classes>
-      <class name="Test.TC003">
-        <methods>
-          <include name="productNameSearch"/>
-          <include name="tearDown"/>
-          <include name="setUp"/>
-        </methods>
-      </class> <!-- Test.TC003 -->
-      <class name="Test.TC004">
-        <methods>
-          <include name="checkoutFlow"/>
-          <include name="tearDown"/>
-          <include name="setUp"/>
-        </methods>
-      </class> <!-- Test.TC004 -->
-    </classes>
-  </test> <!-- EdgeTest(failed) -->
   <test thread-count="5" parallel="tests" name="ChromeTest(failed)">
     <parameter name="browser" value="chrome"/>
     <classes>
@@ -33,20 +14,6 @@
           <include name="setUp"/>
         </methods>
       </class> <!-- Test.MainTest -->
-      <class name="Test.TC003">
-        <methods>
-          <include name="productNameSearch"/>
-          <include name="tearDown"/>
-          <include name="setUp"/>
-        </methods>
-      </class> <!-- Test.TC003 -->
-      <class name="Test.TC004">
-        <methods>
-          <include name="checkoutFlow"/>
-          <include name="tearDown"/>
-          <include name="setUp"/>
-        </methods>
-      </class> <!-- Test.TC004 -->
     </classes>
   </test> <!-- ChromeTest(failed) -->
 </suite> <!-- Failed suite [Suite] -->

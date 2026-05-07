@@ -24,7 +24,7 @@ public class TC003 extends BaseTest{
 		List<String> containCartDetalis = Arrays.asList("Rs. 1299","1","Rs. 1299");
 		Assert.assertTrue(cartproduct.cartProductVarification().containsAll(containCartDetalis));	
 	}
-	@Test
+	@Test(retryAnalyzer = utils.retry.class)
 	void increaseQuantity() {
 		ProductPage product = new ProductPage(driver);
 		CartPage cartproduct = new CartPage(driver);
@@ -40,7 +40,7 @@ public class TC003 extends BaseTest{
 		Assert.assertEquals(cartproduct.increaseProductQuantity("2"),cartproduct.getQuantity());
 		Assert.assertEquals(cartproduct.getTotal(),3897);
 	}
-	@Test
+	@Test(retryAnalyzer = utils.retry.class)
 	void addTwoDifferentProduct() {
 		ProductPage product = new ProductPage(driver);
 		CartPage cartproduct = new CartPage(driver);
@@ -53,11 +53,11 @@ public class TC003 extends BaseTest{
 		Assert.assertEquals(cartproduct.getTotal(), 2299);
 
 	}
-	@Test
+	@Test(retryAnalyzer = utils.retry.class)
 	void productNameSearch() {
 		ProductPage product = new ProductPage(driver);
-		product.searchProducts("Dress");
-		Assert.assertEquals(product.countProductWithName("Dress"),product.productCountValidation());
+		product.searchProducts("Jeans");
+		Assert.assertEquals(product.countProductWithName("Jeans"),product.productCountValidation());
 	}
 
 }

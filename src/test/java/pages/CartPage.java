@@ -8,6 +8,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
+import utils.SmartActions;
 import utils.scrollClass;
 import utils.waitClass;
 
@@ -29,6 +30,7 @@ public class CartPage {
 	By allCartProduct = By.xpath("//td[@class='cart_description']/h4/a");
 	By viewProduct = By.xpath(".//div[@class='choose']/ul/li/a");
 	By checkOutBtn = By.xpath("//a[contains(@class,'check_out')]");
+	By adsPopUP = By.xpath("//div[@class='continue-prompt-text']");
 	
 	public CartPage(WebDriver driver) {
 		this.driver = driver;
@@ -45,6 +47,12 @@ public class CartPage {
 			productDetails.add(fullProduct.get(i).findElement(cartProductPrice).getText());
 			productDetails.add(fullProduct.get(i).findElement(cartProductQuantity).getText());
 			productDetails.add(fullProduct.get(i).findElement(cartProductTotal).getText());
+			/*if( wait.clickForElementWait(adsPopUP).isDisplayed() == true) {
+				WebElement popUp = wait.clickForElementWait(adsPopUP);
+				SmartActions.jsClick(popUp);
+			}else {
+				continue;
+			}*/
 			
 		}
 		driver.navigate().back();
