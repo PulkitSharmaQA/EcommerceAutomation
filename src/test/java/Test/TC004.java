@@ -2,6 +2,7 @@ package Test;
 
 import org.testng.Assert;
 import org.testng.annotations.Test;
+import org.testng.asserts.SoftAssert;
 
 import Base.BaseTest;
 import pages.CartPage;
@@ -12,6 +13,7 @@ import pages.loginValidation;
 public class TC004 extends BaseTest {
 	@Test(groups = {"regression"},retryAnalyzer = utils.retry.class)
 	void multiProductCartLogic() {
+		SoftAssert softAssert = new SoftAssert();
 		ProductPage product = new ProductPage(driver);
 		CartPage cartproduct = new CartPage(driver);
 		
@@ -31,11 +33,15 @@ public class TC004 extends BaseTest {
 		driver.navigate().back();
 		product.getToIncreaseQuantity();
 		cartproduct.increaseProductQuantity("1");
-		Assert.assertEquals(cartproduct.getTotal(), 3598);
+		softAssert.assertEquals(cartproduct.getTotal(), 3598);
+		softAssert.assertAll();
 		
 	}
+	
+	
 	@Test(groups = {"sanity","regression"},retryAnalyzer = utils.retry.class)
 	void checkoutFlow() {
+		SoftAssert softAssert = new SoftAssert();
 		loginValidation login = new loginValidation(driver);
 		ProductPage product = new ProductPage(driver);
 		CartPage cartproduct = new CartPage(driver);
@@ -45,15 +51,15 @@ public class TC004 extends BaseTest {
 		login.userDetails();
 		product.searchProducts("T-shirt"); 
 		int productCount = product.productCountValidation();
-		Assert.assertTrue(productCount > 1);
+		softAssert.assertTrue(productCount > 1);
 		
 		//Add to different product and validate
 		product.addProductsToCart(2);
 		int total =cartproduct.getTotal();
 		//Checking Amount Of Products
-		Assert.assertEquals(checkOut.checkOut(),total);
+		softAssert.assertEquals(checkOut.checkOut(),total);
 		Assert.assertTrue(checkOut.fillPaymentForm().contains("Congratulations! Your order has been confirmed!"));
-		
+		softAssert.assertAll();
 	}
 	
 
