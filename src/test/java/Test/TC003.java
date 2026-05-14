@@ -41,16 +41,18 @@ public class TC003 extends BaseTest{
 		//Here amount of product to increase
 		
 		Assert.assertEquals(cartproduct.increaseProductQuantity("2"),cartproduct.getQuantity());
-		Assert.assertEquals(cartproduct.getTotal(),3897);
+		softAssert.assertEquals(cartproduct.getTotal(),3897);
+		softAssert.assertAll();
 	}
 	@Test(groups = {"regression"},retryAnalyzer = utils.retry.class)
 	void addTwoDifferentProduct() {
+		SoftAssert softAssert = new SoftAssert();
 		ProductPage product = new ProductPage(driver);
 		CartPage cartproduct = new CartPage(driver);
 		//Search product
 		product.searchProducts("T-shirt"); 
 		//Item in cart are more than 1
-		Assert.assertTrue(product.productCountValidation()>1);
+		softAssert.assertTrue(product.productCountValidation()>1);
 		//adding number of items want to add
 		product.addProductsToCart(2);
 		Assert.assertEquals(cartproduct.getTotal(), 2299);
@@ -58,9 +60,11 @@ public class TC003 extends BaseTest{
 	}
 	@Test(groups = {"regression"},retryAnalyzer = utils.retry.class)
 	void productNameSearch() {
+		SoftAssert softAssert = new SoftAssert();
 		ProductPage product = new ProductPage(driver);
 		product.searchProducts("Jeans");
-		Assert.assertEquals(product.countProductWithName("Jeans"),product.productCountValidation());
+		softAssert.assertEquals(product.countProductWithName("Jeans"),product.productCountValidation());
+		softAssert.assertAll();
 	}
 
 }
