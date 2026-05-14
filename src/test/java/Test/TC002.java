@@ -8,32 +8,35 @@ import java.util.List;
 import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
+import org.testng.asserts.SoftAssert;
 
 import Base.BaseTest;
 import pages.ProductPage;
 
 public class TC002 extends BaseTest {
-	@Test(dataProvider="Items",retryAnalyzer = utils.retry.class)
+	@Test(groups = {"regression"},dataProvider="Items",retryAnalyzer = utils.retry.class)
 	void productTest(String items,String names,String price) {
 		//Search product 
+		SoftAssert softAssert = new SoftAssert();
 		ProductPage product = new ProductPage(driver);
 		product.searchProducts(items);
 		
 		//Validte numbers of items are more than 1
 		int productCount = product.productCountValidation();
-		Assert.assertTrue(productCount > 1);
+		softAssert.assertTrue(productCount > 1);
 		
 		//Product Name contains "T-shirt"
 		//Assert.assertEquals(productCount,product.getTshirtsText(items));
 		
 		//validte all Products are visible
 		List<String> priceAndProductList = Arrays.asList("View Product");
-		Assert.assertTrue(product.getPriceImageViewproduct().containsAll(priceAndProductList));
+		softAssert.assertTrue(product.getPriceImageViewproduct().containsAll(priceAndProductList));
 		
 		//item Which is added to cart Validation with Name and Price
 		List<String> priceAndNameList = Arrays.asList(names,price);
-		Assert.assertTrue(product.getFirstProductDetails().containsAll(priceAndNameList));
+		softAssert.assertTrue(product.getFirstProductDetails().containsAll(priceAndNameList));
 		
+		softAssert.assertAll();
 	}
 	
 	 @DataProvider(name = "Items")

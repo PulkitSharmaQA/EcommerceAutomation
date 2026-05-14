@@ -5,14 +5,16 @@ import java.util.List;
 
 import org.testng.Assert;
 import org.testng.annotations.Test;
+import org.testng.asserts.SoftAssert;
 
 import Base.BaseTest;
 import pages.CartPage;
 import pages.ProductPage;
 
 public class TC003 extends BaseTest{
-	@Test(retryAnalyzer = utils.retry.class)
+	@Test(groups = {"smoke","regression"},retryAnalyzer = utils.retry.class)
 	void addProductToCart() {
+		
 		ProductPage product = new ProductPage(driver);
 		CartPage cartproduct = new CartPage(driver);
 		product.searchProducts("T-shirt");
@@ -24,8 +26,9 @@ public class TC003 extends BaseTest{
 		List<String> containCartDetalis = Arrays.asList("Rs. 1299","1","Rs. 1299");
 		Assert.assertTrue(cartproduct.cartProductVarification().containsAll(containCartDetalis));	
 	}
-	@Test(retryAnalyzer = utils.retry.class)
+	@Test(groups = {"regression"},retryAnalyzer = utils.retry.class)
 	void increaseQuantity() {
+		SoftAssert softAssert = new SoftAssert();
 		ProductPage product = new ProductPage(driver);
 		CartPage cartproduct = new CartPage(driver);
 		//Search product
@@ -40,7 +43,7 @@ public class TC003 extends BaseTest{
 		Assert.assertEquals(cartproduct.increaseProductQuantity("2"),cartproduct.getQuantity());
 		Assert.assertEquals(cartproduct.getTotal(),3897);
 	}
-	@Test(retryAnalyzer = utils.retry.class)
+	@Test(groups = {"regression"},retryAnalyzer = utils.retry.class)
 	void addTwoDifferentProduct() {
 		ProductPage product = new ProductPage(driver);
 		CartPage cartproduct = new CartPage(driver);
@@ -53,7 +56,7 @@ public class TC003 extends BaseTest{
 		Assert.assertEquals(cartproduct.getTotal(), 2299);
 
 	}
-	@Test(retryAnalyzer = utils.retry.class)
+	@Test(groups = {"regression"},retryAnalyzer = utils.retry.class)
 	void productNameSearch() {
 		ProductPage product = new ProductPage(driver);
 		product.searchProducts("Jeans");

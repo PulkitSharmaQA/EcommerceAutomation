@@ -6,7 +6,7 @@ import java.util.List;
 import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
-
+import org.testng.asserts.SoftAssert;
 
 import Base.BaseTest;
 import pages.ProductPage;
@@ -14,9 +14,10 @@ import pages.loginValidation;
 
 public class MainTest extends BaseTest {
 	
-	@Test(retryAnalyzer = utils.retry.class)
+	@Test(groups = {"smoke" , "regression"},retryAnalyzer = utils.retry.class)
 	public void loginTest() throws InterruptedException {
 		// Create Account 
+		
 		loginValidation login = new loginValidation(driver);
 		String validUserName=login.signIn( login.randomName() + "9@yahoo.com");
 		login.userDetails();
