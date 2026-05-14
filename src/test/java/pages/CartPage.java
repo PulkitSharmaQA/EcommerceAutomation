@@ -47,12 +47,6 @@ public class CartPage {
 			productDetails.add(fullProduct.get(i).findElement(cartProductPrice).getText());
 			productDetails.add(fullProduct.get(i).findElement(cartProductQuantity).getText());
 			productDetails.add(fullProduct.get(i).findElement(cartProductTotal).getText());
-			/*if( wait.clickForElementWait(adsPopUP).isDisplayed() == true) {
-				WebElement popUp = wait.clickForElementWait(adsPopUP);
-				SmartActions.jsClick(popUp);
-			}else {
-				continue;
-			}*/
 			
 		}
 		driver.navigate().back();
